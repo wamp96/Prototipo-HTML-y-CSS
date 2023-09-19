@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WM INVENTORY COMPANY OR BUSINESS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="cabecera">
+        <div class="logos">
+            <div class="logo1">
+                <img src="https://img.freepik.com/vector-premium/icono-empresa-ilustracion-elemento-simple-diseno-simbolo-concepto-empresa-puede-utilizar-web-movil_159242-7784.jpg?w=2000"
+                alt="logo_emp">    
+            </div>
+            <div class="logo2">
+                <img src="logo.png" alt="logo_soft">    
+            </div>
+        </div>
+
+        <div class="perfil_adm">    
+            <div class="icono_ayuda">
+                <button>?</button>
+            </div>        
+            <div class="imagen_perfil">
+                <img src="perfil.jpg" alt="Perfil">
+            </div>
+            <div class="perfil_txt">
+                <ul>
+                    <li>
+                        <h5>PERFIL: ADMINISTRADOR</h5>
+                    </li>
+                    <li><button>Datos Completos</button></li>
+                    <li><button>Desconexion</button></li>
+                </ul>
+            </div>             
+        </div>
+    </header>
+
+
+    <main id="container">
+        <div class="titulo_secciones">
+            <h3>CREAR USUARIO</h3>
+        </div>
+        <div id="secciones">
+            <section class="seccion1">
+                <ul class="datos1">
+                    <li>DOCUMENTO IDENTIDAD:<input type="text"></li>
+                    <li>NOMBRE:<input type="text"></li>
+                    <li>APELLIDO PATERNO:<input type="text"></li>
+                    <li>APELLIDO MATERNO:<input type="text"></li>
+                    <li>CORREO:<input type="email"></li>
+                    <li>TELEFONO:<input type="tel"></li>
+                </ul>
+            </section>
+            <section class="seccion2">
+                <ul class="datos2">
+                    <li>USUARIO:<input type="text"></li>
+                    <li>ROL:<select name="membership" id="roles">
+                            <option value="rol" selecte> </option>
+                            <option value="rol1">TECNICO</option>
+                            <option value="rol2">ANALISTA INVENTARIO</option>
+                            <option value="rol3">USUARIO</option>
+                        </select></li>
+                    <li>AREA:<select name="membership" id="areas">
+                            <option value="area" selected></option>
+                            <option value="area1">AUDITORIA</option>
+                            <option value="area2">CONTABILIDAD</option>
+                            <option value="area3">OFICINA</option>
+                            <option value="area4">DESARROLLO</option>
+                        </select></li>
+                    <li>CIUDAD:<select name="membership" id="ciudades">
+                            <option value="ciudad" selected></option>
+                            <option value="ciudad1">BOGOTA</option>
+                            <option value="ciudad2">MEDELLIN</option>
+                            <option value="ciudad3">CALI</option>
+                            <option value="ciudad4">BARRANQUILLA</option>
+                        </select></li>
+                    <li>CONTRASEÑA:<input type="password"></li>
+                    <li>CONFIRMAR CONTRASEÑA:<input type="password"></li>
+                </ul>            
+            </section>        
+        </div>
+        <div class="botones_av">
+            <button>ACEPTAR</button>
+            <button>VOLVER</button>
+        </div>
+    </main>
+
+    <footer id="pie_pagina">
+        <h4>&copy; 2023 WM INVENTORY COMPANY OR BUSINESS</h4>
+        <h4>Todos los derechos reservados</h4>
+    </footer>
+</body>
+
+</html>
