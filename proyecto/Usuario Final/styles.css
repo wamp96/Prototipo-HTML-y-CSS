@@ -1,457 +1,180 @@
-    * {
-        margin: 0px;
-        padding: 0px;
-    }
+:root{
+    --img-margen-tl:5px 10px 5px 10px;
+    --color-fondo:#667cac;
+}   
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
-    body {
-        background-color: #667cac;    
-    }
+#cabecera {
+    display: flex;
+    justify-content: space-between;
+    background-color: #b7b7b7;
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 4px 4px 0px 4px;
+    border: 3px solid #444;
+    position: fixed;
+    top:0%;
+    right:0%;
+    left: 0%;
+    box-sizing: border-box;
+}
 
-    #cabecera {
-        display: flex;
-        justify-content: space-between;
-        background-color: #b7b7b7;
-        height: auto;
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 4px 4px 0px 4px;
-        border: 3px solid #444;
-        position: fixed;
-        top:0%;
-        right:0%;
-        left: 0%;
-        box-sizing: border-box;
-    }
+#cabecera img {
+    height: 85px;
+}
 
-    #cabecera img {
-        width: 100%;
-        height: 85px;
-        margin-bottom: 0px;
-    }
+.logos {
+    display: flex;
+}
 
-    .logos {
-        display: flex;
-    }
+.logo1 img {
+    border-right: 3px solid #444;
+    padding-right: 20px;
+    margin: var(--img-margen-tl);
+}
+.logo2 img {
+    margin: var(--img-margen-tl);
+}
 
-    .logo1 img {
-        border-right: 3px solid #444;
-        padding-right: 10px;
-    }
+.imagen_perfil {
+    margin: var(--img-margen-tl)
+}
 
-    .logo2 img {
-        margin-left: 20px;
-    }
+.icono_ayuda {
+    position: relative;
+    top: 30%;
+    margin-right: 10px;
+}
 
-    .imagen_perfil {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+.icono_ayuda button {
+    border-radius: 50%;
+    padding: 20%;
+    background-color: black;
+    color: #fff;
+}
 
-    .icono_ayuda {
-        position: relative;
-        top: 40%;
-    }
+.icono_ayuda button:hover {
+    background-color: #fff;
+    color: #444;
+}
 
-    .icono_ayuda button {
-        border-radius: 50%;
-        padding: 20%;
-        background-color: black;
-        color: #fff;
-    }
-
-    .icono_ayuda button:hover {
-        background-color: #fff;
-        color: #444;
-    }
-
-
-    .perfil_adm {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .perfil_adm li {
-        list-style: none;
-    }
-
-    .perfil_txt {
-        margin-bottom: 0px;
-    }
-
-    .perfil_txt ul {
-        border-left: 3px solid #444;
-        padding-left: 10px;
-    }
-
-    .perfil_txt button {
-        width: 100%;
-        padding: 5px;
-    }
-
-    .perfil_txt button:hover {
-        background-color: rgb(202, 231, 255);
-    }
-
-    .perfil_txt h5 {
-        border: 1px solid #444;
-        background-color: #fff;
-        padding: 5px;
-    }
-
-    #container {
-        border: 2px solid #444;
-        margin: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        background-color: #c5c5c5;
-        border-radius: 20px;
-        font-size: 90%;
-        height: 100%;
-        position: relative;
-    }
-
-    #pie_pagina {
-        display: flex;
-        border-top: 2px solid #444;
-        padding-top: 0.5%;
-        flex-direction: column;
-        width: 98%;
-        margin-left: 1%;
-        margin-right: 1%;
-        height: auto;
-        justify-content: center;
-        text-align: center;
-        position: absolute;
-        bottom: 0;        
-    }
-
-    /*Contenedor Administrador - INICIO SESION*/
-
-    #container_inicio{
-        display: grid;
-        border: 1px solid #444;
-        width: 60%;
-        margin: 120px 20% 50px 20%;
-        height: auto;
-        grid-template-rows: repeat(12 ,50px);
-        grid-template-columns: 10% repeat(8 ,10%)10%;
-        background-color: #c5c5c5;             
-        box-sizing: border-box;
-        border-radius: 20px;
-        
-    }
-
-    #container_inicio img{
-        width: 100px;
-    }
+.container{
+    background-color: var(--color-fondo);
+    margin-left: 5px;
+    margin-right: 50px;
+    text-align: center;
+    box-sizing: border-box;
+}
 
 
-    .container_inicio_adm{
-        grid-row: 2/12;
-        grid-column: 3/9;
-        background-color: #fff;
-        border: 1px solid #444;
-        border-radius: 20px;
-        text-align: center;
-        line-height: 50px;
-    }
+.perfil_adm {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
-    .inicio_imagenes{
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .inicio_texto{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;    
-    }
-    .inicio_texto input{
-        margin: 10px 10% 10px 10%;
-    }
+.perfil_adm li {
+    list-style: none;
+}
 
-    /*Contenedor Administrador - PERFIL*/
-        #container_perfil_adm {
-        display: flex;
-        border: 2px solid #444;
-        margin: 120px 10px 20px 10px;
-        background-color: #c5c5c5;
-        border-radius: 20px;
-        font-size: 90%;
-        height: 100%;
-        padding: 140px 20px 140px 20px;
-        justify-content: space-around;
-        box-sizing: border-box;
-    }
+.perfil_txt {
+    margin-bottom: 0px;
+}
 
-    .crear_adm,.eliminar_adm,.modificar_adm,.visualizar_adm{
-        display: flex;
-        flex-direction: column; 
-        background-color: #fff;
-        text-align: center;     
-        align-items: center;  
-        border-radius: 20px;
-        border: 3px solid #444;
-        padding: 20px;
-        line-height: 50px;
-    }
-    #container_perfil_adm textarea{
-        margin-top: 20px;
-    }
-    .titulo_container_perfil_adm{
-        position: absolute;
-        top: 180px;
-    }
- 
-    /*Contenedor Administrador - CREACION DE USUARIO*/
-    #secciones {
-        display: flex;
-    }
+.perfil_txt ul {
+    border-left: 3px solid #444;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
 
-    .seccion1,
-    .seccion2 {
-        width: 50%;
-        height: auto;
-        border: 1px solid #444;
-        border-radius: 2%;
-        background-color: #fff;
-        margin: 1%;
-        padding: 3% 10% 3% 10%;
-        text-align: center;
-        box-sizing: border-box;
-    }
+.perfil_txt button {
+    width: 100%;
+    margin-bottom: 0.1px;
+}
 
-    .titulo_secciones {
-        text-align: center;
-        margin: 1%;
-    }
+.perfil_txt button:hover {
+    background-color: rgb(202, 231, 255);
+}
 
-    .seccion1 h1 {
-        margin-bottom: 80px;
+.perfil_txt h6 {
+    border: 3px solid #444;
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: 3px;
 
-    }
+}
+.pie_pagina {
+    border-top: 2px solid #444;
+    padding-top: 0.5%;
+    width: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    height:2.5rem;
+    text-align: center;
+    bottom: 0%;
+}
 
-    .datos1,
-    .datos2 {
-        text-align: left;
-    }
+/*Contenedor Administrador - INICIO SESION*/
 
-    input[type="text" i],
-    input[type="email" i],
-    input[type="tel" i],
-    input[type="password" i] {
-        float: right;
-    }
+#container_inicio{
+    display: grid;
+    border: 1px solid #444;
+    width: 100%;
+    margin: 200px 0px 50px 0px;
+    height: auto;
+    grid-template-rows: repeat(12 ,50px);
+    grid-template-columns: 10% repeat(8 ,10%)10%;
+    background-color: #c5c5c5;             
+    box-sizing: border-box;
+    border-radius: 20px;
+    align-items: center;
+}
 
-    .datos1 li {
-        margin-top: 50px;
-    }
+#container_inicio img{
+    width: 100px;
+}
 
-    .datos2 li {
-        margin-top: 50px;
-    }
 
-    .datos2 select {
-        float: right;
-        width: 170px;
-    }
+.container_inicio{
+    grid-row: 2/12;
+    grid-column: 2/10;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #444;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 50px;
+}
 
-    .seccion1 li,
-    .seccion2 li {
-        list-style: none;
-    }
-
-    .botones_av {
-        display: flex;
-        align-items: center;
-        margin: 10px;
-        justify-content: center;
-    }
-
-    .botones_av button {
-        text-align: center;
-        width: 100px;
-        margin:40px ;
-    }
-
-    .botones_av button:hover {
-        background-color: rgb(202, 231, 255);
-    }
-
-    /*Contenedor Administrador - MODIFICAR USUARIO*/
-    .container_mod {
-        display: grid;
-        border: 1px solid #444;
-        width: 100%;
-        height: auto;
-        grid-template-rows: 50px 50px repeat(4 ,100px) 50px 50px;
-        grid-template-columns: 10% repeat(4 ,20%)10%;
-        background-color: #c5c5c5;     
-        padding: 5%;
-        padding-top: 2%;
-        box-sizing: border-box;
-        border-radius: 20px;
-        position: relative;
-    }
-    .titulo_container_mod{
-        text-align: center;
-        grid-row: 1/2;
-        grid-column: 1/7;
-        border-bottom: 1px solid #444;
-    }
-
-    .seccion_mod1 {
-        margin-top: 10px;
-        grid-row: 2/3;
-        grid-column: 1/7;
-    }  
-    .seccion_mod2,.seccion_mod3,.seccion_mod4,.seccion_mod5,.seccion_mod6{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        flex-direction: column;
-        line-height:40px;
-    }
-
-    .secciones_mod{
-        display: grid;
-        grid-row: 3/9;
-        grid-column: 2/6;
-        grid-template-rows: 70% 20% 10%;
-        grid-template-columns: 12.5% repeat(5 ,15%) 12.5%;
-        background-color: #fff;
-        border-radius: 20px;
-        border: 1px solid #444;
-    }
-    .seccion_mod2 label,.seccion_mod3 label,.seccion_mod4 label,.seccion_mod5 label{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-bottom:30px ;
-    }
-
-    .seccion_mod2{
-        grid-column: 2/3;
-    }
-
-    .seccion_mod3{
-        grid-column: 4/5;
-    }
-
-    .seccion_mod4{
-        grid-column: 6/7;
-    }
-
-    .seccion_mod5{ 
-       grid-column: 3/6;
-       grid-row: 2/3;
-       margin: 0% 20% 0% 20%;
-    }
-
-    .seccion_mod_buttom{
-        text-align: center;
-        margin-top: 80px;
-    }
- 
-    /*Contenedor Administrador - LISTAR USUARIOS*/
-    #container_listar {
-        display: flex;
-        text-align: center;
-        margin: 2%;
-        margin-bottom: 4%;
-        height: auto;
-        justify-content: center;
-        background-color: #fff;
-        position: relative;
-        justify-content: center;
-    }
-
-    #container_listar .titulo{
-        top: 100px;
-        width: 100%;
-        background-color: #fff;
-    }
-
-    #container_listar section {
-        border: 2px solid #444;
-        text-align: center;
-        width: 100%;
-        height: auto;
-        background-color: #fff;
-        position: relative;
-
-    }
-
-    #container_listar .tabla {
-        display: flex;
-        width: 100%;
-        border: 1px solid #444;
-        height: auto;
-        font-size: 10px;
-        padding: 5px;
-        max-height: 520px;
-        text-align: center;
-        overflow: scroll;
-    }
-
-    #container_listar .titulo {
-        margin-top: 20px;
-        margin-bottom: 20px;
-
-    }
-
-    #container_listar table,
-    th,
-    td,
-    tr {
-        border: 1px solid #444;
-        padding: 5px;
-        width: auto;
-
-    }
-
-    #container_listar button{
-       position: absolute;
-    }
-
-/*Contenedor Administrador - ELIMINAR USUARIOS*/
-    .seccion_eliminar_usuario{
-        display: flex;
-        flex-direction: column;
-        grid-column: 2/6;
-        grid-row: 3/9 ;
-        text-align: center;
-        background-color: #fff;
-        border-radius: 20px;
-        border: 1px solid #444;
-        box-sizing: border-box;
-        padding: 50px 150px 30px 150px;
+.inicio_titulo{
+    margin:20px 0px 20px 0px;
     
-    }
-    #usuarios_el {
-        margin: 0px 20% 20px 20%;
-    }
-    .usuarios_elim_general textarea{
-        display: flex;
-        justify-content: center;
-        width:100%;
-        height:250px;
-        border:1px solid #444;
-        border-radius:3px;
-        background-color:#f6f6f6;			
-        margin:8px 0;
-        /*resize: vertical | horizontal | none | both*/
-        resize:none;
-    }    
+}
 
-    .boton_eliminar{
-        display: inline-block;
-        margin-top: 20px;
-    }
-    .boton_eliminar button{
-        margin: 0px 50px 0px 50px;
-    }
+.inicio_imagenes{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0px 10px 0px;
+}
+.inicio_texto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+}
 
+.inicio_texto h4{
+    margin-top: 20px;
+}
+
+.inicio_texto input{
+    width: 50%;
+    margin: auto 25% auto 25%;
+    height: 30px;
+}
 
 /*----------------------------------------------------
 PERFIL USUARIO FINAL
@@ -536,10 +259,177 @@ PERFIL USUARIO FINAL
    bottom: 0%;
 }
 
+/*Modulo Usuario Final - Requerimiento*/
+#container_requerimiento_uf{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #444;
+    margin: 120px 10px 20px 10px;
+    background-color: #c5c5c5;
+    border-radius: 20px;
+    font-size: 90%;
+    line-height: 30px;
+    height: 100%;
+    padding: 20px;
+    justify-content: space-around;
+    box-sizing: border-box;
+    text-align: center;
+}
+.secciones_requerimiento{
+    background-color: #fff;
+    border-radius: 20px;
+    border: 2px solid #444;
+    padding: 20px 50px 20px 50px;
+}
+.numero_requerimiento{
+    text-align: start;
+    border-bottom: 1px solid #444;
+}
+.titulo_req{
+    text-align: start;    
+}
+.titulo_req input{
+    width: 70%;
+    background-color: #b7b7b7;
+    color: #444;
+}
+.detalle_req{
+    text-align: start;    
+}
+.detalle_req textarea{
+    width: 100%;
+    overflow:scroll;
+        background-color: #b7b7b7;
+        border: 2px solid #444;
+}
+.estado_req{
+    float: right;
+}
 
+.datos_usuario_req{
+    display: flex;
+    justify-content: center;
+}
 
+.datos_usuario_titulo{
+    text-align: start;
+    width: 10%;
+}
 
+.datos_usuario_lista1, .datos_usuario_lista2{
+    border: 2px solid #444;
+    width: 50%;
+}
 
+.datos_usuario_lista1 ul, .datos_usuario_lista2 ul{
+    width: 50%;
+    margin-left: 20%;
+    margin-right: 25%;
+    margin:20px 25% 20px 20%;
+    text-align: right;
+}
+
+.datos_usuario_lista1 li, .datos_usuario_lista2 li{
+    list-style: none;
+}
+.datos_usuario_lista1 input, .datos_usuario_lista2 input{
+    background-color: #b7b7b7;
+}
+.Observacion_req{
+    text-align: start;
+    margin-top: 10px;
+}
+.Observacion_req h3{
+    border: 2px solid #444;
+    border-bottom: none;
+    width: 10%;
+    background-color: #b7b7b7;
+    text-align: center;
+    margin-left: 20px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.Observacion_req textarea{
+    width: 98%;
+    overflow:hidden;
+    background-color: #b7b7b7;
+    border: 2px solid #444;
+    margin: 1%;
+}
+.Obs_detalle_req{
+    border: 2px solid #444;
+    background-color: #b7b7b7;
+}
+.Observacion_titulio_req{
+    display: flex;
+}
+/*Modulo Usuario Final - Visualizar Requerimientos*/
+
+#container_listar_uf {
+    display: flex;
+    text-align: center;
+    height: auto;
+    min-height: calc(100%-4rem);
+    margin: 120px 1% auto 1%;
+    justify-content: center;
+    background-color: #fff;
+    width: 98%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#container_listar_uf .titulo{
+    top: 100px;
+    width: 100%;
+    background-color: #b7b7b7;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}   
+
+#container_listar_uf section {
+    border: 2px solid #444;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: #b7b7b7;
+}
+
+#container_listar_uf .tabla {
+    display: flex;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 1px solid #444;
+    height: 630px;
+    min-height: 500px ;     
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    overflow: scroll;     
+    border-collapse:collapse;
+    background-color: #fff;
+}
+
+#container_listar_uf table,
+th,
+td,
+tr {
+    border: 1px solid #444;
+    padding: 5px;
+    width: auto; 
+    background-color: #fff;
+}
+.tabla th {
+    background-color: #b7b7b7;
+}
+
+#container_listar_uf button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
  /*RESPONSIVE INDEX_ADM-CREAR-USUARIO_ADM-LISTAR USUARIO_ADM-MODIF-USUARIO*/
 
@@ -589,7 +479,7 @@ PERFIL USUARIO FINAL
             }
     
     
-            .perfil_adm {
+            .perfil {
                 display: flex;
                 flex-direction: column;
                 position: relative;
@@ -619,7 +509,7 @@ PERFIL USUARIO FINAL
                 left: 2px;
             }
     
-            .perfil_adm .icono_ayuda {
+            .perfil .icono_ayuda {
                 position: absolute;
             }
     

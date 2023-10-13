@@ -1,59 +1,59 @@
-    * {
-        margin: 0px;
-        padding: 0px;
-    }
+:root{
+    --img-margen-tl:5px 10px 5px 10px;
+    --color-fondo:#667cac;
+}   
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+#body{
+    background-color: var(--color-fondo);
+}
 
-    body {
-        background-color: #667cac;    
-        height: 100%;
-    }
+#cabecera_adm {
+    display: flex;
+    justify-content: space-between;
+    background-color: #b7b7b7;
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 4px 4px 0px 4px;
+    border: 3px solid #444;
+    position: fixed;
+    top:0%;
+    right:0%;
+    left: 0%;
+    box-sizing: border-box;
+}
+    
+#cabecera_adm img {
+    height: 85px;
+}
 
-    #cabecera {
-        display: flex;
-        justify-content: space-between;
-        background-color: #b7b7b7;
-        height: auto;
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 4px 4px 0px 4px;
-        border: 3px solid #444;
-        position: fixed;
-        top:0%;
-        right:0%;
-        left: 0%;
-        box-sizing: border-box;
-    }
+.logos {
+    display: flex;
+}
+.logo1 img {
+    border-right: 3px solid #444;
+    padding-right: 20px;
+    margin: var(--img-margen-tl);
+}
+.logo2 img {
+    margin: var(--img-margen-tl);
+}
 
-    #cabecera img {
-        width: 100%;
-        height: 85px;
-        margin-bottom: 0px;
-    }
+.imagen_perfil {
+    margin: var(--img-margen-tl)
+}
 
-    .logos {
-        display: flex;
-    }
+.icono_ayuda {
+    position: relative;
+    top: 30%;
+    margin-right: 10px;
+}
 
-    .logo1 img {
-        border-right: 3px solid #444;
-        padding-right: 10px;
-    }
-
-    .logo2 img {
-        margin-left: 20px;
-    }
-
-    .imagen_perfil {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .icono_ayuda {
-        position: relative;
-        top: 40%;
-    }
-
-    .icono_ayuda button {
+.icono_ayuda button {
         border-radius: 50%;
         padding: 20%;
         background-color: black;
@@ -65,6 +65,21 @@
         color: #444;
     }
 
+    .container{
+        background-color: var(--color-fondo);
+        margin-left: 5px;
+        margin-right: 50px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .container-fluid{
+        background-color: var(--color-fondo);
+        margin-left: 5px;
+        margin-right: 50px;
+        text-align: center;
+        box-sizing: border-box;
+    }
 
     .perfil_adm {
         display: flex;
@@ -83,48 +98,32 @@
     .perfil_txt ul {
         border-left: 3px solid #444;
         padding-left: 10px;
+        margin-bottom: 5px;
     }
 
     .perfil_txt button {
         width: 100%;
-        padding: 5px;
+        margin-bottom: 0.1px;
     }
 
     .perfil_txt button:hover {
         background-color: rgb(202, 231, 255);
     }
 
-    .perfil_txt h5 {
-        border: 1px solid #444;
+    .perfil_txt h6 {
+        border: 3px solid #444;
         background-color: #fff;
         padding: 5px;
-    }
+        margin-bottom: 3px;
 
-    #container {
-        border: 2px solid #444;
-        margin: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        background-color: #c5c5c5;
-        border-radius: 20px;
-        font-size: 90%;
-        height: 100%;
-        position: relative;
     }
-
-    #pie_pagina {
-        display: flex;
+    .pie_pagina {
         border-top: 2px solid #444;
         padding-top: 0.5%;
-        padding-bottom: 2%;
-        flex-direction: column;
-        width: 98%;
-        margin-left: 1%;
-        margin-right: 1%;
+        width: 100%;
         height:2.5rem;
-        justify-content: center;
         text-align: center;
-        background-color: #667cac;
+        bottom: 0%;
     }
 
     /*Contenedor Administrador - INICIO SESION*/
@@ -132,15 +131,15 @@
     #container_inicio{
         display: grid;
         border: 1px solid #444;
-        width: 60%;
-        margin: 120px 20% 50px 20%;
+        width: 100%;
+        margin: 200px 0px 50px 0px;
         height: auto;
         grid-template-rows: repeat(12 ,50px);
         grid-template-columns: 10% repeat(8 ,10%)10%;
         background-color: #c5c5c5;             
         box-sizing: border-box;
         border-radius: 20px;
-        
+        align-items: center;
     }
 
     #container_inicio img{
@@ -150,7 +149,8 @@
 
     .container_inicio_adm{
         grid-row: 2/12;
-        grid-column: 3/9;
+        grid-column: 2/10;
+        height: 100%;
         background-color: #fff;
         border: 1px solid #444;
         border-radius: 20px;
@@ -158,17 +158,30 @@
         line-height: 50px;
     }
 
+    .inicio_titulo{
+        margin:20px 0px 20px 0px;
+        
+    }
+
     .inicio_imagenes{
         display: flex;
         justify-content: space-evenly;
+        margin: 20px 0px 10px 0px;
     }
     .inicio_texto{
         display: flex;
         justify-content: center;
         flex-direction: column;    
     }
+
+    .inicio_texto h4{
+        margin-top: 20px;
+    }
+
     .inicio_texto input{
-        margin: 10px 10% 10px 10%;
+        width: 50%;
+        margin: auto 25% auto 25%;
+        height: 30px;
     }
 
     /*Contenedor Administrador - PERFIL*/
@@ -176,12 +189,12 @@
             display: flex;
             flex-direction: column;
             border: 2px solid #444;
-            margin: 120px 10px 20px 10px;
+            margin: 20px 10px 20px 10px;
             background-color: #c5c5c5;
             border-radius: 20px;
             font-size: 90%;
-            height: 100%;
-            padding: 80px 20px 140px 20px;
+            height: 580px;
+            padding: 20px;
             justify-content: space-around;
             box-sizing: border-box;
             text-align: center;
@@ -191,18 +204,25 @@
         display: flex;
         flex-direction: column; 
         background-color: #fff;
+        padding:20px;
+        width: 20%;
+        height: 520px;
         text-align: center;     
         align-items: center;  
         border-radius: 20px;
-        border: 3px solid #444;
-        padding: 20px;
-        line-height: 50px;
+        border: 3px solid #444;     
     }
-    #container_perfil_adm textarea{
+    #container_perfil_adm p{
         margin-top: 20px;
+        border:2px solid #444;
+        height: 100%;
     }
     .titulo_container_perfil_adm{
-        margin-bottom: 50px;
+        margin-top: 120px;
+    }
+    .titulo_container_perfil_adm p{
+        margin-left: 20%;
+        margin-right: 20%;
     }
     .secciones_perfil_adm{
         display: flex;
@@ -213,6 +233,13 @@
     /*Contenedor Administrador - CREACION DE USUARIO*/
     #secciones {
         display: flex;
+        background-color: #b7b7b7;
+        border-radius: 20px;
+        border: 2px solid#444;
+    }
+
+    .container_crear_adm{
+        margin-top: 130px;
     }
 
     .seccion1,
@@ -222,10 +249,13 @@
         border: 1px solid #444;
         border-radius: 2%;
         background-color: #fff;
-        margin: 1%;
-        padding: 3% 10% 3% 10%;
+        margin: 2%;
+        padding: 1% 10% 3% 10%;
         text-align: center;
         box-sizing: border-box;
+    }
+    span{
+        color: red;
     }
 
     .titulo_secciones {
@@ -278,11 +308,7 @@
     .botones_av button {
         text-align: center;
         width: 100px;
-        margin:40px ;
-    }
-
-    .botones_av button:hover {
-        background-color: rgb(202, 231, 255);
+        margin: 20px 80px 20px 80px ;
     }
 
     /*Contenedor Administrador - MODIFICAR USUARIO*/
@@ -294,23 +320,22 @@
         grid-template-rows: 50px 50px repeat(4 ,100px) 50px 50px;
         grid-template-columns: 10% repeat(4 ,20%)10%;
         background-color: #c5c5c5;     
-        padding: 5%;
-        padding-top: 2%;
         box-sizing: border-box;
-        border-radius: 20px;
-        position: relative;
+        border-radius: 20px;     
     }
+
     .titulo_container_mod{
+        margin-top: 120px;
         text-align: center;
-        grid-row: 1/2;
-        grid-column: 1/7;
-        border-bottom: 1px solid #444;
+        margin-bottom: 20px;
+        grid-column: 3/5;
     }
 
     .seccion_mod1 {
         margin-top: 10px;
-        grid-row: 2/3;
-        grid-column: 1/7;
+        grid-row: 1/2;
+        grid-column: 3/5;
+        text-align: center;
     }  
     .seccion_mod2,.seccion_mod3,.seccion_mod4,.seccion_mod5,.seccion_mod6{
         display: flex;
@@ -322,7 +347,7 @@
 
     .secciones_mod{
         display: grid;
-        grid-row: 3/9;
+        grid-row: 2/8;
         grid-column: 2/6;
         grid-template-rows: 70% 20% 10%;
         grid-template-columns: 12.5% repeat(5 ,15%) 12.5%;
@@ -335,6 +360,14 @@
         flex-direction: column;
         text-align: center;
         margin-bottom:30px ;
+    }
+
+    .seccion_mod2 input,.seccion_mod3 input,.seccion_mod4 input,.seccion_mod5 input{
+      height: 20px;
+    }
+
+    .seccion_mod5 input{
+        width: 300px;
     }
 
     .seccion_mod2{
@@ -350,14 +383,26 @@
     }
 
     .seccion_mod5{ 
-       grid-column: 3/6;
+       display: flex ;
+       flex-direction: row;
+       justify-content: space-around;
+       grid-column: 2/7;
        grid-row: 2/3;
-       margin: 0% 20% 0% 20%;
+       margin: 10px 20px 10px 20px;
+
     }
 
-    .seccion_mod_buttom{
+    .seccion_mod_buttom {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        justify-content: center;
+    }
+
+    .seccion_mod_buttom button {
         text-align: center;
-        margin-top: 80px;
+        width: 100px;
+        margin: 20px 80px 20px 80px ;
     }
  
     /*Contenedor Administrador - LISTAR USUARIOS*/
@@ -372,6 +417,7 @@
         width: 98%;
         box-sizing: border-box;
         justify-content: center;
+        margin-bottom: 20px;
     }
 
     #container_listar .titulo{
@@ -381,20 +427,20 @@
 
     }   
 
-    #container_listar section {
+    .secciones_lista_usuarios {
         border: 2px solid #444;
         text-align: center;
         width: 100%;
-        height: auto;
+        height: 750px;
         background-color: #fff;
-        
     }
+
 
     #container_listar .tabla {
         display: flex;
         width: 100%;
         border: 1px solid #444;
-        height: 700px;
+        height: 550px;
         min-height: 500px ;     
         padding: 5px;
         justify-content: center;
@@ -407,10 +453,22 @@
         margin-bottom: 20px;
     }
 
-    #container_listar table,
-    th,
-    td,
-    tr {
+    .botones_lista_usuario{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #container_listar 
+    th{
+        border: 1px solid #444;
+        padding: 5px;
+        width: auto;
+        color: #fff;
+        background: #1e56cf;
+    }
+
+    #container_listar
+    td {
         border: 1px solid #444;
         padding: 5px;
         width: auto;
@@ -418,36 +476,15 @@
     }
 
     #container_listar button{
-    }
-
-/*Contenedor Administrador - LISTAR USUARIOS*/
-    #container_listarp{
-        display: flex;
-        box-sizing: border-box;
-        width: 98%;
-        height: auto;
-        margin: 120px 1% auto 1%;
-        text-align: center;
-        background-color: #fff;
-        border: 3px solid #444;
-        justify-content: center;
-    }
-    .tabla{
-        width: 98%;
-        overflow: scroll;
-        height: 500px;
-        border: 1px solid #444;
-    }
-    .tabla table{
-        display: flex;
-        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 /*Contenedor Administrador - ELIMINAR USUARIOS*/
     .seccion_eliminar_usuario{
         display: flex;
         flex-direction: column;
         grid-column: 2/6;
-        grid-row: 3/9 ;
+        grid-row: 2/8 ;
         text-align: center;
         background-color: #fff;
         border-radius: 20px;
@@ -474,10 +511,12 @@
 
     .boton_eliminar{
         display: inline-block;
-        margin-top: 20px;
+        height: 50px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
     .boton_eliminar button{
-        margin: 0px 50px 0px 50px;
+        margin: 0px 100px 0px 100px;
     }
 
  /*RESPONSIVE INDEX_ADM-CREAR-USUARIO_ADM-LISTAR USUARIO_ADM-MODIF-USUARIO*/

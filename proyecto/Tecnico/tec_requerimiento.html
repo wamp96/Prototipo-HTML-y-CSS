@@ -30,16 +30,16 @@
             <div class="perfil_txt">
                 <ul>
                     <li>
-                        <h5>PERFIL: USUARIO</h5>
+                        <h5>PERFIL: TECNICO</h5>
                     </li>
                     <li><button>Datos Completos</button></li>
-                    <li> <button role="link" onclick="window.location='Inicio_uf.html'">Desconexion</button></li>
+                    <li><button>Desconexion</button></li>
                 </ul>
             </div>
         </div>
     </header>
 
-    <main id="container_requerimiento_uf">
+    <main id="container_requerimiento_tec">
             <div class="secciones_requerimiento">
                 <div class="numero_requerimiento">
                     <h2>REQUERIMIENTO - RQ001</h2>
@@ -48,8 +48,11 @@
                     <h3>TITULO</h3>
                     <input type="text"  value="Solicitud Monitor Nuevo">  
                     <div class="estado_req">
-                        <select name="membership" id="estado" style="background-color: #b7b7b7; border: 2px solid #444;margin-right: 100px;">
+                        <select name="membership" id="estado" style="border: 2px solid #444;margin-right: 100px;">
                             <option value="estado1"> EN CURSO </option>
+                            <option value="estado1"> PENDIENTE PARTE </option>
+                            <option value="estado1"> ASIGNADO </option>
+                            <option value="estado1"> PENDIENTE USUARIO </option>
                         </select></li>
                     </div>                  
                 </div>                
@@ -80,16 +83,16 @@
                 </div>
                 <div class="Observacion_req">
                     <div class="Observacion_titulio_req">
-                        <h3 
-                        >Observacion</h3>   
+                        <h3>Observacion</h3>   
                         <h3 style="margin-left: 0px; border-left: none; border-top-left-radius: 0px;">Historial Observaciones</h3>
                     </div>
                     <div class="Obs_detalle_req">
-                    <textarea name="" id="" rows="5" ></textarea>
+                    <textarea name="" id="" rows="3" ></textarea>
                     </div>
                 </div>
                 <div class="botones_req">
-                    <button role="link" onclick="window.location='uf-perfil.html'">VOLVER</button>  
+                    <button type="button">VOLVER</button>
+                    <button type="button">GUARDAR</button>
                 </div>
             </div>    
     </main>
