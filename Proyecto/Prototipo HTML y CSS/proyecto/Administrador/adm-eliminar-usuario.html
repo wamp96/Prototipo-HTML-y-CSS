@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WM INVENTORY COMPANY OR BUSINESS</title>
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body id="body">
+    <header id="cabecera_adm">
+        <div class="logos">
+            <div class="logo1">
+                <img src="https://img.freepik.com/vector-premium/icono-empresa-ilustracion-elemento-simple-diseno-simbolo-concepto-empresa-puede-utilizar-web-movil_159242-7784.jpg?w=2000"
+                    alt="\logo_emp">
+            </div>
+            <div class="logo2">
+                <img src="../Imagenes/logo.png" alt="logo_soft">
+            </div>
+        </div>
+        <div class="perfil_adm">
+            <div class="icono_ayuda">
+                <button>?</button>
+            </div>
+            <div class="imagen_perfil">
+                <img src="../Imagenes/perfil.jpg" alt="Perfil">
+            </div>
+            <div class="perfil_txt">
+                <ul>
+                    <li>
+                        <h6>PERFIL: ADMINISTRADOR</h6>
+                    </li>
+                    <li><button>Datos Completos</button></li>
+                    <li> <button role="link" onclick="window.location='Inicio_adm.html'">Desconexion</button></li>
+                </ul>
+            </div>
+        </div>
+    </header> 
+    <div class="titulo_container_mod">
+        <h1>ELIMINAR USUARIO</h1>
+   </div>
+    <main class="contenido_eliminar container">
+        <div class="container_mod">
+           <div class="seccion_eliminar_usuario">
+              <label for="usuarios_el"><b>Selecciona los usuarios por eliminar</b></label><br>
+              <select multiple name="usuarios_el" id="usuarios_el">
+              <option>8372473</option>
+              <option>1023281237</option>
+              <option>1013812388</option>
+              <option>7712738</option>
+              <option>9112028</option>
+              <option>1019223818</option>           
+            </select>
+            <div class="usuarios_elim_general">
+            <label for="mensaje"><b>Usuarios Ingresados</b></label>
+	        <textarea name="mensaje" for="mensaje" placeholder="Agrege las Cedulas por Eliminar" maxlength="300"></textarea>
+           </div>        
+           </div>               
+        </div> 
+        <div class="boton_eliminar" >
+            <button class="btn btn-light border border-dark">ELIMINAR</button>
+            <button role="link" class="btn btn-light border border-dark" onclick="window.location='adm-perfil.html'">VOLVER</button>
+        </div>      
+    </main>
+    <footer class="pie_pagina">
+        <h4>&copy; 2023 WM INVENTORY COMPANY OR BUSINESS</h4>
+        <h4>Todos los derechos reservados</h4>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

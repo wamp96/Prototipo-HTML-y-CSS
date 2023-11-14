@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <title>WM INVENTORY COMPANY OR BUSINESS</title>
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body id="body">
+    <header id="cabecera_adm">
+        <div class="logos">
+            <div class="logo1">
+                <img src="https://img.freepik.com/vector-premium/icono-empresa-ilustracion-elemento-simple-diseno-simbolo-concepto-empresa-puede-utilizar-web-movil_159242-7784.jpg?w=2000"
+                    alt="\logo_emp">
+            </div>
+            <div class="logo2">
+                <img src="../Imagenes/logo.png" alt="logo_soft">
+            </div>
+        </div>
+        <div class="perfil_adm">
+            <div class="icono_ayuda">
+                <button>?</button>
+            </div>
+            <div class="imagen_perfil">
+                <img src="../Imagenes/perfil.jpg" alt="Perfil">
+            </div>
+            <div class="perfil_txt">
+                <ul>
+                    <li>
+                        <h6>PERFIL: ADMINISTRADOR</h6>
+                    </li>
+                    <li><button>Datos Completos</button></li>
+                    <li> <button role="link" onclick="window.location='Inicio_adm.html'">Desconexion</button></li>
+                </ul>
+            </div>
+        </div>
+    </header> 
+
+    <main id= "container_listar">
+            <section class="secciones_lista_usuarios">
+                    <div class="titulo">
+                        <h2>LISTA DE USUARIO</h2>   
+                    </div> 
+                    <div class="botones_lista_usuario">
+                        <button>RESTABLECER</button>                                           
+                        <button>FILTRAR <select name="membership" id="roles">
+                            <option value="rol" selecte> </option>
+                            <option value="rol1">TECNICO</option>
+                            <option value="rol2">ANALISTA INVENTARIO</option>
+                            <option value="rol3">USUARIO</option>
+                        </select></button>
+                        <button>BUSCAR <input type="text"></button>
+                    </div>  
+                    <table class="tabla">
+                        <tr>
+                            <th>ID USUARIO</th>
+                            <th>NOMBRE_PERFIL</th>
+                            <th>N_IDENTIDAD</th>
+                            <th>NOMBRE</th>
+                            <th>APELLIDO_PATERNO</th>
+                            <th>APELLIDO_MATERNO</th>
+                            <th>CORREO</th>
+                            <th>TELEFONO</th>
+                            <th>CIUDAD</th>
+                            <th>AREA</th>
+                            <th>ROL</th>
+                            <th>ESTADO</th>
+                        </tr>
+                        <tr>
+                            <td>US014</td>
+                            <td>SERGVAZQUEZ</td>
+                            <td>7712738</td>
+                            <td>Sergio</td>
+                            <td>Leon</td>
+                            <td>Vazquez</td>
+                            <td>Sergio_Leon@wm.com</td>
+                            <td>3186316712</td>
+                            <td>CALI</td>
+                            <td>OFICINA</td>
+                            <td>USUARIO FINAL</td>
+                            <td>ACTIVO</td>
+                        </tr>
+                        <tr>
+                            <td>US015</td>
+                            <td>GUSTSEVE</td>
+                            <td>9112028</td>
+                            <td>Gustavo</td>
+                            <td>Salvez</td>
+                            <td>Severino</td>
+                            <td>Gustavo_Salvez@wm.com</td>
+                            <td>3147126363</td>
+                            <td>CALI</td>
+                            <td>OFICINA</td>
+                            <td>USUARIO FINAL</td>
+                            <td>ACTIVO</td>
+                        </tr>
+                        <tr>
+                            <td>US016</td>
+                            <td>SANDVALEN</td>
+                            <td>1019223818</td>
+                            <td>Sandra </td>
+                            <td>Ocampo </td>
+                            <td>Valencia</td>
+                            <td>Sandra_Ocampo@wm.com</td>
+                            <td>3128123712</td>
+                            <td>MEDELLIN</td>
+                            <td>AUDITORIA</td>
+                            <td>USUARIO FINAL</td>
+                            <td>BLOQUEADO</td>
+                        </tr>
+                        <tr>
+                            <td>US017</td>
+                            <td>JONAALFO</td>
+                            <td>1023564864</td>
+                            <td>Jonathan </td>
+                            <td>Alfonso </td>
+                            <td>Marques</td>
+                            <td>JonathanAlf56@gmail.com</td>
+                            <td>3156546548</td>
+                            <td>BOGOTA</td>
+                            <td>-</td>
+                            <td>ANALISTA_INVENTARIO</td>
+                            <td>ACTIVO</td>
+                        </tr>
+                        <tr>
+                            <td>US018</td>
+                            <td>MARIOCAMP</td>
+                            <td>1036545645</td>
+                            <td>Maria Camila </td>
+                            <td>Ocampo</td>
+                            <td>Reyes</td>
+                            <td>Maria_Ocampo@wm.com</td>
+                            <td>3205646848</td>
+                            <td>BOGOTA</td>
+                            <td>-</td>
+                            <td>ANALISTA_INVENTARIO</td>
+                            <td>DESACTIVADO</td>
+                        </tr>
+                        <tr>
+                            <td>US019</td>
+                            <td>JHONCAST</td>
+                            <td>1012156446</td>
+                            <td>Jhon Alexander</td>
+                            <td>Castellanos </td>
+                            <td>Marin</td>
+                            <td>Jhon_Castellanos@wm.com</td>
+                            <td>3205464545</td>
+                            <td>BOGOTA</td>
+                            <td>-</td>
+                            <td>TECNICO</td>
+                            <td>ACTIVO</td>
+                        </tr>
+                        <tr>
+                            <td>US020</td>
+                            <td>JUANVELA</td>
+                            <td>8084645</td>
+                            <td>Juan Camilo</td>
+                            <td>Velazques </td>
+                            <td>Riaño</td>
+                            <td>Juan_Velazques@wm.com</td>
+                            <td>3158498065</td>
+                            <td>CALI</td>
+                            <td>-</td>
+                            <td>TECNICO</td>
+                            <td>ACTIVO</td>
+                        </tr>
+                        <tr>
+                            <td>US021</td>
+                            <td>LEIDMART</td>
+                            <td>1025648948</td>
+                            <td>Leidy Maritza </td>
+                            <td>Martinez</td>
+                            <td>Lopez</td>
+                            <td>LeidyMaritza50@outlook.com</td>
+                            <td>3194894894</td>
+                            <td>MEDELLIN</td>
+                            <td>-</td>
+                            <td>TECNICOL</td>
+                            <td>ACTIVO</td>
+                        </tr>
+                        <tr>
+                            <td>US022</td>
+                            <td>JUANLOZAD</td>
+                            <td>7987895</td>
+                            <td>Juan Camilo </td>
+                            <td>Lozada</td>
+                            <td>Moreno</td>
+                            <td>Moreno</td>
+                            <td>3215464856</td>
+                            <td>BOGOTA</td>
+                            <td>-</td>
+                            <td>ADMINISTRADOR</td>
+                            <td>ACTIVO</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                    </table> 
+                    <button role="link" class="btn btn-light border border-dark" onclick="window.location='adm-perfil.html'">VOLVER</button>                   
+            </section>         
+    </main>
+
+    <footer class="pie_pagina">
+        <h4>&copy; 2023 WM INVENTORY COMPANY OR BUSINESS</h4>
+        <h4>Todos los derechos reservados</h4>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+*{
+    margin: 0px;  
+    padding: 0px;  
+}
+body{
+    margin: 10px;
+    background-color: rgb(224, 224, 224);
+}
+#cabecera{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+#cabecera img{
+    width: 150px;
+    height: 150px;
+}
+.logos{
+    margin: 0px;
+}
+
+#titulo{
+    padding-top: 50px;
+}
+
+
+.perfil_adm{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.perfil_adm li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.perfil_txt{
+    margin-left: 20px;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+.perfil_txt button{
+    width: 100%;
+    padding: 5px;
+}
+.perfil_txt button:hover{
+    background-color: rgb(202, 231, 255);
+}
+.perfil_txt h5{
+    border: 1px solid #444;
+    background-color: #fff;
+    padding: 5px;
+}
+
+#container{
+    display: flex;
+    border: 2px solid #444;  
+    height: 750px;         
+    
+}
+
+section{
+    width: 50%;
+    height: auto;
+    border: 1px solid #444;
+    background-color: #fff;
+    padding: 12%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+
+.seccion1 h1{
+    margin-bottom: 80px;
+
+}
+.datos1,.datos2{
+    text-align: left;
+}
+input[type="text" i],input[type="email" i],input[type="tel" i],input[type="password" i]  {
+    float: right;
+}
+
+.datos1 li{
+     margin-top: 50px;
+}
+.datos2 li{
+    margin-top: 50px;
+}
+.datos2 select{
+    float: right;
+    width: 170px;
+}
+
+section li{
+    list-style: none;
+}
+
+
+.botones_av{
+   display: flex;
+   float: right;
+   margin-top: 60px;
+   flex-direction: column;
+}
+
+.botones_av button{
+    margin: 20px;
+    width: 100%;
+    
+}
+
+
+
+.botones_av button:hover{
+    background-color: rgb(202, 231, 255);
+}
+
+
+
+#pie_pagina{
+    margin-top: 10px;
+    text-align: center;
+}

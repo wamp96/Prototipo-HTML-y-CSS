@@ -1,0 +1,202 @@
+/*PANTILLA INICIAL*/
+:root{
+    --img-margen-tl:5px 10px 5px 10px;
+    --color-fondo:#667cac;
+    
+}   
+
+* {
+    margin: 0px;
+    padding: 0px;           
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+    max-height: 100vh;
+    box-sizing: border-box;
+}
+section{
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);    
+    width: 100%;
+    height: 100%;
+}   
+
+#cabecera {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+    height: auto;
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 4px 4px 0px 4px;
+    border: 3px solid #444;
+    box-sizing: border-box;
+}
+    
+#cabecera img {
+    height: 85px;
+}
+
+.logos {
+    display: flex;
+}
+
+.logo1 img {
+    border-right: 3px solid #444;
+    padding-right: 20px;
+    margin: var(--img-margen-tl);
+}
+
+.logo2 img {
+    margin: var(--img-margen-tl);
+}
+
+.imagen_perfil {
+    margin: var(--img-margen-tl)
+}
+aside{
+    background-image: linear-gradient(to bottom, #d7d2cc 0%, #304352 100%);
+    border-right:3px solid #444 ;
+} 
+
+.container-fluid{
+    /*background-image: linear-gradient(to top, #09203f 0%, #537895 100%);*/
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.container_pri{
+    background-image: url("../Imagenes/logo.png");
+    background-position: 50% 30%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.perfil {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.perfil li {
+    list-style: none;
+}
+
+.perfil_txt {
+    margin-bottom: 0px;
+}
+
+.perfil_txt ul {
+    border-left: 3px solid #444;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+.perfil_txt button {
+    width: 100%;
+    margin-bottom: 0.1px;
+}
+
+.perfil_txt button:hover {
+    background-color: rgb(202, 231, 255);
+}
+
+.perfil_txt h6 {
+    border: 3px solid #444;
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: 3px;
+}
+
+.cont_pie_pagina,.cont_pie_pagina2,.cont_pie_pagina3{
+    color: white;
+    text-align: center;
+    font-size: 5px;
+}
+
+
+/*INICIO DE SESION*/
+.con_inicio{
+    padding-top:60px;   
+    position: relative;
+}
+.con_inicio1,.con_inicio2{
+    align-self:center;
+    height: 90%;
+    border: 3px solid #000000; 
+    border-radius:20px ;
+}
+
+.con_inicio1{
+    border-right: 1px solid #000000;
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+    background-image: url("../Imagenes/post\ instagram\ tecnologico\ neon\ azul.png");
+    background-size: cover;
+    background-position: center;
+}
+.con_inicio2{
+    border-left: 1px solid #000000;
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+    background-color: #d6d6d6;
+}
+.con_inicio_texto{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 80px;
+    line-height:200%;
+}
+.con_inicio_texto *{
+    margin: 20px;
+}
+
+.con_inicio_texto button:hover{
+    color: white;
+    background-color: black;
+}
+.con_red_soc{
+   display: flex;
+   justify-content: space-evenly;
+   margin: auto 40px;
+}
+.con_red_soc img{
+    width: 30px;
+}
+
+/*ELIMINAR USUARIO*/
+.container_mod{
+    height: 85vh;
+    background-color: #b6b5b5;
+    margin-top: 5px;
+    border: 3px solid #444;
+    padding: 50px 40px;
+    position: relative;
+}
+
+.titulo_eli_usr{
+    border-bottom: 2px solid #444;
+    margin-bottom: 50px;
+}
+
+
+@media(max-width:1200px){    
+}
+
+@media(min-width:800px) and (max-width: 1199px){
+
+}
+@media (max-width:799px){
+
+}
+
+
+
