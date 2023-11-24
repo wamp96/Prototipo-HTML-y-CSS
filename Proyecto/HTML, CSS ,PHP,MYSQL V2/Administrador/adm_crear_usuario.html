@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WM INVENTORY COMPANY OR BUSINESS</title>
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">   
 </head>
 
 <body>
@@ -40,7 +40,7 @@
 
     </header>
     <main class="d-flex flex-nowrap">
-        <aside class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style="width: 280px;">
+        <aside class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary">
             <a href="/"
                 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                 <svg class="bi pe-none me-2" width="40" height="32">
@@ -112,44 +112,49 @@
             </ul>
         </aside>
         <section class="container-fluid">
-            <div class="contenido1">
-
-
-
+            <div class="contenido d-flex bg-secondary">
+                <div class="contenido1 col-sm-6">
+                    <form action="adm_crear_Usuario.php" method="post">
+                        <div class="col-form-label d-flex justify-content-evenly">
+                            <label>DOCUMENTO IDENTIDAD :</label>
+                            <input type="text" name="identidad">
+                        </div>
+                        <div class="col-form-label d-flex justify-content-evenly">
+                            <label>NOMBRE :</label>
+                            
+                        </div>    
+                        <label>APELLIDO PARTENO: <input class="col-form-label" type="text" name="apellidop"></label>
+                        <label>APELLIDO MATERNO: <input class="col-form-label" type="text" name="apellidom"></label>
+                        <label>CORREO: <input type="text" class="col-form-label" name="correo"></label>
+                        <label>TELEFONO: <input type="text" class="col-form-label" name="telefono"></label>
+                    </form>
+                </div>
+                <div class="contenido2 col-sm-6">
+                    <form action="adm_crear_Usuario.php" method="post">
+                        <label>USUARIO:<input type="text" class="col-form-label" name="usuario"></label>
+                        <label>ROL:<select name="rol" class="col-form-label">
+                                <option value="1">TECNICO</option>
+                                <option value="2">ANALISTA INVENTARIO</option>
+                                <option value="3">USUARIO</option>
+                            </select></label>
+                        <label>AREA:<select name="area" class="col-form-label">
+                                <option value="1">AUDITORIA</option>
+                                <option value="2">CONTABILIDAD</option>
+                                <option value="3">OFICINA</option>
+                                <option value="4">DESARROLLO</option>
+                            </select></label>
+                        <label>CIUDAD:<select name="ciudad" class="col-form-label">
+                                <option value="ciudad1">BOGOTA</option>
+                                <option value="ciudad2">MEDELLIN</option>
+                                <option value="ciudad3">CALI</option>
+                                <option value="ciudad4">BARRANQUILLA</option>
+                            </select></label>
+                        <label>CONTRASEÑA: <span>*</span> <input class="col-form-label" type="password" name="contrasena"></label>
+                        <input type="submit" value="Registrar">
+                    </form>
+                </div>
+             
             </div>
-
-            <div class="contenido2">
-                <form action="adm_crear_Usuario.php" method="post">
-                    <li>DOCUMENTO IDENTIDAD: <input type="text" name="identidad"></li>
-                    <li>NOMBRE: <input type="text" name="nombre"></li>
-                    <li>APELLIDO PARTENO: <input type="text" name="apellidop"></li>
-                    <li>APELLIDO MATERNO: <input type="text" name="apellidom"></li>
-                    <li>CORREO: <input type="text" name="correo"></li>
-                    <li>TELEFONO: <input type="text" name="telefono"></li>
-                </form>
-            </div>
-            <form action="adm_crear_Usuario.php" method="post">
-                <li>USUARIO:<input type="text" name="usuario"></li>
-                <li>ROL:<select name="rol">
-                        <option value="1">TECNICO</option>
-                        <option value="2">ANALISTA INVENTARIO</option>
-                        <option value="3">USUARIO</option>
-                    </select></li>
-                <li>AREA:<select name="area">
-                        <option value="1">AUDITORIA</option>
-                        <option value="2">CONTABILIDAD</option>
-                        <option value="3">OFICINA</option>
-                        <option value="4">DESARROLLO</option>
-                    </select></li>
-                <li>CIUDAD:<select name="ciudad">
-                        <option value="ciudad1">BOGOTA</option>
-                        <option value="ciudad2">MEDELLIN</option>
-                        <option value="ciudad3">CALI</option>
-                        <option value="ciudad4">BARRANQUILLA</option>
-                    </select></li>
-                <li>CONTRASEÑA: <span>*</span> <input type="password" name="contrasena"></li>
-                <input type="submit" value="Registrar">
-            </form>
         </section>
         <footer class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark d-flex justify-content-around">
             <div class="cont_pie_pagina">

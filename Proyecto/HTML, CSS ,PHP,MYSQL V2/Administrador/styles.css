@@ -186,6 +186,18 @@ aside {
     width: 30px;
 }
 
+
+/*CREACION USUARIO*/
+
+.contenido{
+    display: block;
+    background-color: #939393;
+}
+
+.contenido1,.contenido2{
+    padding: 20px;
+}
+
 /*ELIMINAR USUARIO*/
 .container_mod {
     height: 85vh;
