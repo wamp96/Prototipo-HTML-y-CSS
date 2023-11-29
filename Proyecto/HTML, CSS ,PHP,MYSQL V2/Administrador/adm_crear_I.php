@@ -2,13 +2,14 @@
     <section class="container-fluid">
         <div class="contenido d-flex bg-secondary">
             <div class="contenido1 col-sm-6">
-                <form action="adm_crear_Usuario.php" method="post">
+                <form action="adm_crear_C.php" method="post">
                     <div class="col-form-label d-flex justify-content-evenly">
                         <label>DOCUMENTO IDENTIDAD :</label>
                         <input type="text" name="identidad">
                     </div>
-                    <div class="col-form-label d-flex justify-content-evenly">
+                    <div>
                         <label>NOMBRE :</label>  
+                        <input type="text" name="nombre">
                     </div>    
                     <label>APELLIDO PARTENO: <input class="col-form-label" type="text" name="apellidop"></label>
                     <label>APELLIDO MATERNO: <input class="col-form-label" type="text" name="apellidom"></label>
@@ -17,18 +18,19 @@
                 </form>
             </div>
             <div class="contenido2 col-sm-6">
-                <form action="adm_crear_Usuario.php" method="post">
+                <form action="adm_crear_C.php" method="post">
                     <label>USUARIO:<input type="text" class="col-form-label" name="usuario"></label>
                     <label>ROL:<select name="rol" class="col-form-label">
                             <option value="1">TECNICO</option>
                             <option value="2">ANALISTA INVENTARIO</option>
                             <option value="3">USUARIO</option>
-                        </select></label>
+                        </select></label>                
                     <label>AREA:<select name="area" class="col-form-label">
                             <option value="1">AUDITORIA</option>
                             <option value="2">CONTABILIDAD</option>
                             <option value="3">OFICINA</option>
                             <option value="4">DESARROLLO</option>
+                            <option value="5">TECNOLOGIA</option>
                         </select></label>
                     <label>CIUDAD:<select name="ciudad" class="col-form-label">
                             <option value="ciudad1">BOGOTA</option>
