@@ -8,7 +8,6 @@
 
     $con = connection();
 
-    $id_usuario = null;
     $identidad = isset($_POST['identidad']) ? $_POST['identidad'] : "";
     $nombre = isset($_POST['nombre']) ? $_POST['nombre'] : "";
     $apellidop = isset($_POST['apellidop']) ? $_POST['apellidop'] : "";
@@ -23,14 +22,14 @@
 
 
 
-    $sql = "INSERT INTO usuario (id_usuario,nombre_perfil,contraseña,id_rol) 
+    $sql = "INSERT INTO usuario (nombre_perfil,contraseña,id_rol) 
     VALUE(
-        '$id_usuario',
         '$usuario',
         '$contrasena'
         '$rol',        
          )";
 
+    $id_usuario = $con->insert_id_usuario;
 
     if($rol == 1){
         $sql = "INSERT INTO tecnico (id_tecnico,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
@@ -45,9 +44,40 @@
             '$usuario',
             '$area'
              )";
-    }    
 
-    $query = mysqli_query($con,$sql);
+    }elseif($rol == 2){
+        $sql = "INSERT INTO analista_inventario (id_analista_invetario,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
+        VALUE(
+            '$identidad',
+            '$nombre',
+            '$apellidop',
+            '$apellidom',
+            '$correo',
+            '$telefono',
+            '$ciudad',
+            '$usuario',
+            '$area'
+             )"; 
+                
+    }elseif($rol == 3){
+        $sql = "INSERT INTO usuario_final (id_usuario_final,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
+        VALUE(
+            '$identidad',
+            '$nombre',
+            '$apellidop',
+            '$apellidom',
+            '$correo',
+            '$telefono',
+            '$ciudad',
+            '$usuario',
+            '$area'
+             )";    
+    }
+    
+    
+
+    mysqli_query($con,$sql );
+
     /*Se cierra la conexion a la base de datos $conexion abierta previamente */
     mysqli_close($con);
     //Imprimir mensaje al cerrar la conexion a la base de datos

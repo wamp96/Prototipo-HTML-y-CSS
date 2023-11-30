@@ -33,13 +33,13 @@
                             <option value="5">TECNOLOGIA</option>
                         </select></label>
                     <label>CIUDAD:<select name="ciudad" class="col-form-label">
-                            <option value="ciudad1">BOGOTA</option>
-                            <option value="ciudad2">MEDELLIN</option>
-                            <option value="ciudad3">CALI</option>
-                            <option value="ciudad4">BARRANQUILLA</option>
+                            <option value="1">BOGOTA</option>
+                            <option value="2">MEDELLIN</option>
+                            <option value="3">CALI</option>
+                            <option value="4">BARRANQUILLA</option>
                         </select></label>
                     <label>CONTRASEÑA: <span>*</span> <input class="col-form-label" type="password" name="contrasena"></label>
-                    <input type="submit" value="Registrar">
+                    <input type="submit" name="registrar" value="Registrar">
                 </form>
             </div>
         </div>
