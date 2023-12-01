@@ -8,6 +8,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 html {
@@ -186,15 +187,53 @@ aside {
     width: 30px;
 }
 
+.titulo_contenido{
+    height: 8%;
+    background-color: #000000;
+    color: #fff;
+    text-align: start;
+    padding: 20px;
+}
+
 
 /*CREACION USUARIO*/
 
 .contenido{
-    height: 100%;
+    height: 80%;
+    padding: 5%;
+    border: 3px solid #000000;
+}
 
+.contenido1,.contenido2{
+    border: 2px solid #000000;
+    border-radius: 20px;
+    height: 90%;
+    padding: 5%;
+    background-color: #fff;
 }
 
 
+
+
+
+/*MODIFICAR USUARIO*/
+.contenido_mod{
+    height: 100%;
+    padding: 5%;
+    border: 3px solid #000000; 
+    background-color: #fff;
+}
+.cont_mod_form{
+    border: 3px solid #000000; 
+    border-radius: 20px;
+    background-color: #b6b4b4;
+    height: auto;
+    padding: 20px;
+}
+
+.cont_mod_form div{
+    margin:20px 10px;
+}
 
 /*ELIMINAR USUARIO*/
 .container_mod {

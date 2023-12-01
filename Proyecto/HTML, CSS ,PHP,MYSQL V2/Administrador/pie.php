@@ -1,3 +1,4 @@
+</section>
 <footer class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark d-flex justify-content-around">
             <div class="cont_pie_pagina">
                 <h6>CONTACTANOS EN: CORREO: informacionWM@wmcob.com</h6>

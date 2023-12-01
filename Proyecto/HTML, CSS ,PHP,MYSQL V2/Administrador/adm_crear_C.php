@@ -22,62 +22,96 @@
 
 
 
-    $sql = "INSERT INTO usuario (nombre_perfil,contraseña,id_rol) 
-    VALUE(
-        '$usuario',
-        '$contrasena'
-        '$rol',        
-         )";
+    $sql_usuario = "INSERT INTO usuario (nombre_perfil,contraseña,id_rol) 
+            VALUES(
+                '$usuario',
+                '$contrasena',
+                '$rol'     
+            )";
+     mysqli_query($con, $sql_usuario); 
+    
+     
+    if (mysqli_error($con)) {            
+        die("Error en la consulta de usuario: " . mysqli_error($con));
+            }
+        
+            $id_usuario = mysqli_insert_id($con); 
+            
+    if (!empty($id_usuario)) {       
 
-    $id_usuario = $con->insert_id_usuario;
+        $nom = $nombre;
+        $apep = $apellidop;
+        $apem = $apellidom;
+        $email = $correo;
+        $tel = $telefono;
 
-    if($rol == 1){
-        $sql = "INSERT INTO tecnico (id_tecnico,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
-        VALUE(
-            '$identidad',
-            '$nombre',
-            '$apellidop',
-            '$apellidom',
-            '$correo',
-            '$telefono',
-            '$ciudad',
-            '$usuario',
-            '$area'
-             )";
 
-    }elseif($rol == 2){
-        $sql = "INSERT INTO analista_inventario (id_analista_invetario,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
-        VALUE(
-            '$identidad',
-            '$nombre',
-            '$apellidop',
-            '$apellidom',
-            '$correo',
-            '$telefono',
-            '$ciudad',
-            '$usuario',
-            '$area'
-             )"; 
-                
-    }elseif($rol == 3){
-        $sql = "INSERT INTO usuario_final (id_usuario_final,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
-        VALUE(
-            '$identidad',
-            '$nombre',
-            '$apellidop',
-            '$apellidom',
-            '$correo',
-            '$telefono',
-            '$ciudad',
-            '$usuario',
-            '$area'
-             )";    
+        if($rol == 1){
+             
+            $sql = "INSERT INTO tecnico (id_tecnico,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
+            VALUES(
+                '$identidad',
+                '$nom',
+                '$apep',
+                '$apem',
+                '$email',
+                '$tel',
+                '$ciudad',
+                '$id_usuario',
+                '$area'
+                )";
+            
+           
+        }elseif($rol == 2){
+            $sql = "INSERT INTO analista_inventario (id_analista_invetario,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
+            VALUES(
+                '$identidad',
+                '$nombre',
+                '$apellidop',
+                '$apellidom',
+                '$correo',
+                '$telefono',
+                '$ciudad',
+                '$id_usuario',
+                '$area'
+                )"; 
+                    
+        }elseif($rol == 3){
+            $sql = "INSERT INTO usuario_final (id_usuario_final,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
+            VALUES(
+                '$identidad',
+                '$nombre',
+                '$apellidop',
+                '$apellidom',
+                '$correo',
+                '$telefono',
+                '$ciudad',
+                '$id_usuario',
+                '$area'
+                )";    
+        }
+        elseif($rol == 4){
+            $sql = "INSERT INTO administrador (id_administrador,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
+            VALUES(
+                '$identidad',
+                '$nombre',
+                '$apellidop',
+                '$apellidom',
+                '$correo',
+                '$telefono',
+                '$ciudad',
+                '$id_usuario',
+                '$area'
+                )";    
+        }
     }
-    
-    
+        mysqli_query($con, $sql); 
+        
 
-    mysqli_query($con,$sql );
-
+    
+    if (mysqli_error($con)) {
+        die("Error en la consulta: " . mysqli_error($con));
+    }
     /*Se cierra la conexion a la base de datos $conexion abierta previamente */
     mysqli_close($con);
     //Imprimir mensaje al cerrar la conexion a la base de datos
