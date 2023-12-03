@@ -6,8 +6,8 @@
         <div class="cont_mod_form" >
             <form action="">
                     <div class="col-2">
-                        <label class="form-label" ># IDENTIDAD :</label>
-                        <input type="text" class="form-control" name="identidad">
+                        <label class="form-label" >Ingrese numero de cedula</label>
+                        <input type="text" class="form-control" name="cedula">
                     </div>
                 
                 <div class="con_mod_form1 d-flex align-items-center justify-content-around">

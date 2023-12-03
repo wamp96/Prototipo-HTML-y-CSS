@@ -1,8 +1,9 @@
 <?php include ("cabecera_a.php"); ?>
-    <section class="container-fluid">
+        <div class="titulo_contenido">
+            <h3>ELIMINAR USUARIO</h3>
+        </div>
         <div class="container_mod">
             <div class="seccion_eliminar_usuario">
-                <h1 class="titulo_eli_usr">ELIMINAR USUARIO</h1>
             <label for="usuarios_el"><b>Selecciona los usuarios por eliminar</b></label><br>
             <select multiple name="usuarios_el" id="usuarios_el">
             <option>8372473</option>
@@ -22,5 +23,4 @@
             </div>          
             </div>               
         </div>           
-        </section>            
 <?php include ("pie.php"); ?>

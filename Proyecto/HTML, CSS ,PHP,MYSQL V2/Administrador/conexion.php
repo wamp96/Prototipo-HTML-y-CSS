@@ -3,7 +3,7 @@
         $host = "localhost";
         $user = "root";
         $pass = "";
-        $bd = "proyecto";
+        $bd = "proyecto1";
 
         $connect = mysqli_connect($host,$user,$pass) or die ("Problemas de la conexion");
 

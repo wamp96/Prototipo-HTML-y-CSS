@@ -2,9 +2,9 @@
         <div class="titulo_contenido">
             <h3>CREACION DE USUARIO</h3>
         </div>
-        <div class="contenido d-flex bg-secondary justify-content-evenly">
-            <div class="contenido1 col-sm-5">
-                <form action="adm_crear_C.php" method="post">
+        <form action="adm_crear_C.php" method="post">
+        <div class="contenido d-flex bg-secondary justify-content-evenly">        
+            <div class="contenido1 col-sm-5">                
                     <div class="col-form-label d-flex justify-content-between">
                         <label># IDENTIDAD :</label>
                         <input type="text" name="identidad">
@@ -29,10 +29,8 @@
                         <label>TELEFONO :</label>  
                         <input type="text" name="telefono">
                     </div><br>
-                </form>
             </div>
             <div class="contenido2 col-sm-5">
-                <form action="adm_crear_C.php" method="post">
                     <div class="col-form-label d-flex justify-content-between">
                         <label>USUARIO :</label>
                         <input type="text" name="usuario">
@@ -69,8 +67,9 @@
                         <label>CONTRASEÑA: * </label>
                         <input type="password" name="contrasena">
                     </div><br><br>
-                    <input type="submit" name="registrar" value="Registrar">
-                </form>
+                    <input type="submit" name="registrar" value="Registrar">                
+                </div>
             </div>
-        </div>
+        </form>
+        
 <?php include ("pie.php"); ?>
