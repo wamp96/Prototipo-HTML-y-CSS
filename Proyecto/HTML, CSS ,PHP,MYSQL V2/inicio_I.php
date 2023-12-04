@@ -28,9 +28,9 @@
                 <div class="con_inicio2 col-md-4">
                     <div class="con_inicio_texto">
                         <h3>BIENVENIDO</h3>
-                        <form action="ingreso.php" method="post">
-                        <input type="text" placeholder="Ingrese su Usuario">
-                        <input type="password" placeholder="Ingrese su Contraseña">
+                        <form action="inicio_C.php" method="post">
+                        <input name="usuario" type="text" placeholder="Ingrese su Usuario">
+                        <input name="contrasena" type="password" placeholder="Ingrese su Contraseña">
                         <a href="">Restablecer Contraseña</a>
                         <button style="width: 50%;margin:0px 25% ;" role="link" class="btn btn-light border border-dark" onclick="window.location='index.html'">INGRESAR</button>
                         </form>

@@ -17,8 +17,8 @@
 
 
 
-    $sql_usuario = "INSERT INTO usuario (nombre_perfil,contraseña,id_rol) 
-            VALUES('$usuario','$contrasena','$rol')";
+    $sql_usuario = "INSERT INTO usuario (nombre_perfil,contraseña,id_rol,id_estadou) 
+            VALUES('$usuario','$contrasena','$rol',1)";
 
      mysqli_query($con, $sql_usuario); 
     
@@ -39,40 +39,23 @@
                 break;
             case 2:
 
-                $sql = "INSERT INTO analista_inventario (id_analista_invetario,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
+                $sql = "INSERT INTO analista_inventario (id_analista_invetario,identidad,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
                 VALUES('$id','$identidad','$nombre','$apellidop','$apellidom','$correo','$telefono','$ciudad','$id_usuario','$area')"; 
 
                 break;
             case 3:
                 
-                $sql = "INSERT INTO usuario_final (id_usuario_final,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
+                $sql = "INSERT INTO usuario_final (id_usuario_final,identidad,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
                 VALUES('$id','$identidad','$nombre','$apellidop','$apellidom','$correo','$telefono','$ciudad','$id_usuario','$area')";    
 
                 break;
             case 4:
 
-                $sql = "INSERT INTO administrador (id_administrador,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
+                $sql = "INSERT INTO administrador (id_administrador,identidad,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
                 VALUES('$id','$identidad','$nombre','$apellidop','$apellidom','$correo','$telefono','$ciudad','$id_usuario','$area')";    
 
                 break;
         }        
-
-        /*
-        if($rol == 1){ 
-            $sql = "INSERT INTO tecnico (id_tecnico,identidad,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
-            VALUES('$id','$identidad','$nombre','$apellidop','$apellidom','$correo','$telefono','$ciudad','$id_usuario','$area')";
-        }elseif($rol == 2){
-            $sql = "INSERT INTO analista_inventario (id_analista_invetario,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
-            VALUES('$id','$identidad','$nombre','$apellidop','$apellidom','$correo','$telefono','$ciudad','$id_usuario','$area')"; 
-                    
-        }elseif($rol == 3){
-            $sql = "INSERT INTO usuario_final (id_usuario_final,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
-            VALUES('$id','$identidad','$nombre','$apellidop','$apellidom','$correo','$telefono','$ciudad','$id_usuario','$area')";    
-        }
-        elseif($rol == 4){
-            $sql = "INSERT INTO administrador (id_administrador,nombre,apellidop,apellidom,correo,telefono,id_ciudad,id_usuario,id_area) 
-            VALUES('$id','$identidad','$nombre','$apellidop','$apellidom','$correo','$telefono','$ciudad','$id_usuario','$area')";    
-        }*/
     }
         mysqli_query($con, $sql); 
         
@@ -86,3 +69,5 @@
     echo"El usuario fue ingresado correctamente";
         
 ?>
+
+

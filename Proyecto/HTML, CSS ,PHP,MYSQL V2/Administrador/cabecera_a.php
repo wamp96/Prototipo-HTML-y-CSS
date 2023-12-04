@@ -31,8 +31,15 @@
                     <li>
                         <h6>PERFIL: ADMINISTRADOR</h6>
                     </li>
-                    <li><button>WILLIAN ANDRES MORENO PRIETO</button></li>
-                    <li> <button role="link" onclick="window.location='Inicio_adm.html'">Desconexion</button></li>
+                    <li><button><?php 
+
+
+
+
+
+                                          
+                    ;?></button></li>
+                    <li> <button role="link" onclick="window.location='Inicio_I.php'">Desconexion</button></li>
                 </ul>
             </div>
         </div>

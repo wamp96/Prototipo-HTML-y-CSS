@@ -1,8 +1,30 @@
 <?php include ("cabecera_a.php"); ?>
+<?php        
+      include ("../function.php");
+
+      if(isset($_POST['registrar'])){
+        $con = connection();
+        $id = null;
+        $identidad = isset($_POST['identidad']) ? $_POST['identidad'] : "";
+        $nombre = isset($_POST['nombre']) ? $_POST['nombre'] : "";
+        $apellidop = isset($_POST['apellidop']) ? $_POST['apellidop'] : "";
+        $apellidom = isset($_POST['apellidom']) ? $_POST['apellidom'] : "";
+        $correo = isset($_POST['correo']) ? $_POST['correo'] : "";
+        $telefono = isset($_POST['telefono']) ? $_POST['telefono'] : "";
+        $usuario = isset($_POST['usuario']) ? $_POST['usuario'] : "";
+        $rol = isset($_POST['rol']) ? $_POST['rol'] : "";
+        $area = isset($_POST['area']) ? $_POST['area'] : "";
+        $ciudad = isset($_POST['ciudad']) ? $_POST['ciudad'] : "";
+        $contrasena = isset($_POST['contrasena']) ? $_POST['contrasena'] : "";
+
+        crearUsuario($id,$identidad,$nombre,$apellidop,$apellidom,$correo,$telefono,$usuario,$rol,$area,$ciudad,$contrasena);
+      }
+
+?>
         <div class="titulo_contenido">
             <h3>CREACION DE USUARIO</h3>
         </div>
-        <form action="adm_crear_C.php" method="post">
+        <form method="post">
         <div class="contenido d-flex bg-secondary justify-content-evenly">        
             <div class="contenido1 col-sm-5">                
                     <div class="col-form-label d-flex justify-content-between">
