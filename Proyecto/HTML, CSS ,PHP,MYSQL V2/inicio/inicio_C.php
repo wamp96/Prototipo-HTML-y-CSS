@@ -1,6 +1,6 @@
 <?php 
 
-    include ("./Administrador/conexion.php");
+    include ("../conexion.php");
 
     $con = connection();
     $usuario = isset($_POST['usuario']) ? $_POST['usuario'] : "";
@@ -17,19 +17,19 @@
         if (isset($filas['id_rol'])){
             if($filas['id_rol']==1){
 
-                header("location: ./Tecnico/index.php");
+                header("location: ../Tecnico/index.php");
 
             }elseif($filas['id_rol']==2){
 
-                header("location: ./Analista Inventario/index.php");
+                header("location: ../Analista Inventario/index.php");
 
             }elseif($filas['id_rol']==3){
 
-                header("location: ./Usuario Final/index.php");
+                header("location: ../Usuario Final/index.php");
 
             }elseif($filas['id_rol']==4){
 
-                header("location: ./Administrador/index.php");
+                header("location: ../Administrador/index.php");
 
         }else {
             echo "No se encontraron resultados en la consulta: Rol no conocido";
@@ -37,6 +37,7 @@
      
         }
     }else{
+        echo "No se encontraron resultados el usuario";
     } 
 
 

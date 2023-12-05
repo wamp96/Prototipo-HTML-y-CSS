@@ -56,12 +56,3 @@
         //Imprimir mensaje al cerrar la conexion a la base de datos
         echo"El usuario fue ingresado correctamente";
     }
-    function vUsuario($nombre,$apellidop,$apellidom){
-        if (isset($nombre) && isset($apellido_paterno) && isset($apellido_materno)) {
-            echo "<p>$nombre $apellido_paterno $apellido_materno</p>";
-        }     
-    }
-
-
-
-

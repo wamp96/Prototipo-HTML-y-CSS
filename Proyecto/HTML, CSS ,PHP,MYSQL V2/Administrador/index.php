@@ -1,4 +1,5 @@
-<?php include ("cabecera_a.php"); ?>
+<?php   include ("./template/cabecera.php");
+        include("./template/aside.php"); ?>
             <article class="container_pri">
             </article>
-<?php include ("pie.php"); ?>
+<?php include ("./template/pie.php"); ?>

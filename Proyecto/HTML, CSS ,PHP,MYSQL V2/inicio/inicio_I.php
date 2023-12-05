@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WM INVENTORY COMPANY OR BUSINESS</title>
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="./Administrador/styles.css">
+    <link rel="stylesheet" href="../Administrador/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
@@ -13,10 +13,10 @@
         <div class="logos">
             <div class="logo1">
                 <img src="https://img.freepik.com/vector-premium/icono-empresa-ilustracion-elemento-simple-diseno-simbolo-concepto-empresa-puede-utilizar-web-movil_159242-7784.jpg?w=2000"
-                    alt="\logo_emp">
+                    alt="./Imagenes/logo_emp">
             </div>
             <div class="logo2">
-                <img src="./Imagenes/logo.png" alt="logo_soft">
+                <img src="../Imagenes/logo.png" alt="logo_soft">
             </div>
         </div>               
     </header>
@@ -36,10 +36,10 @@
                         </form>
                     </div>
                     <div class="con_red_soc">
-                        <a href="https://www.youtube.com/"><img src="./Imagenes/bxl-youtube.jpg" alt="youtube"></a>
-                        <a href=""><img src="./Imagenes/bxl-facebook-square.jpg" alt="facebook"></a>
-                        <a href=""><img src="./Imagenes/bxl-twitter.jpg" alt="twitter"></a>
-                        <a href=""><img src="./Imagenes/bxl-linkedin-square.jpg" alt="linkedin"></a>
+                        <a href="https://www.youtube.com/"><img src="../Imagenes/bxl-youtube.jpg" alt="youtube"></a>
+                        <a href=""><img src="../Imagenes/bxl-facebook-square.jpg" alt="facebook"></a>
+                        <a href=""><img src="../Imagenes/bxl-twitter.jpg" alt="twitter"></a>
+                        <a href=""><img src="../Imagenes/bxl-linkedin-square.jpg" alt="linkedin"></a>
                     </div>
                 </div>
             </article>

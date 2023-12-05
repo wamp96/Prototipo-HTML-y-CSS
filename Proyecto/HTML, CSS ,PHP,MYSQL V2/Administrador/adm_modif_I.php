@@ -1,4 +1,4 @@
-<?php include ("cabecera_a.php"); ?>
+<?php include ("./template/cabecera.php"); ?>
         <div class="titulo_contenido">
             <h3>MODIFICAR USUARIO</h3>
         </div>
@@ -82,4 +82,4 @@
 
         </div>
         </div>
-<?php include ("pie.php"); ?>
+<?php include ("./template/pie.php"); ?>

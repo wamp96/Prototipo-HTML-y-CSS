@@ -1,4 +1,4 @@
-<?php include ("cabecera_a.php"); ?>
+<?php include ("./template/cabecera.php"); ?>
 <?php        
       include ("../function.php");
 
@@ -94,4 +94,4 @@
             </div>
         </form>
         
-<?php include ("pie.php"); ?>
+<?php include ("./template/pie.php"); ?>
