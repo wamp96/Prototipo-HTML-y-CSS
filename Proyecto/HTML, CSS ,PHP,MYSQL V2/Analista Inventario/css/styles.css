@@ -197,58 +197,20 @@ aside {
 }
 
 
-/*CREACION USUARIO*/
 
-.contenido{
-    height: 80%;
-    padding: 5%;
-    border: 3px solid #000000;
+
+
+
+@media(max-width:1200px){    
 }
 
-.contenido1,.contenido2{
-    border: 2px solid #000000;
-    border-radius: 20px;
-    height: 90%;
-    padding: 5%;
-    background-color: #fff;
+@media(min-width:800px) and (max-width: 1199px){
+
 }
-
-
-
-
-
-/*MODIFICAR USUARIO*/
-.contenido_mod{
-    height: 100%;
-    padding: 5%;
-    border: 3px solid #000000; 
-    background-color: #fff;
-}
-.cont_mod_form{
-    border: 3px solid #000000; 
-    border-radius: 20px;
-    background-color: #b6b4b4;
-    height: auto;
-    padding: 20px;
-}
-
-.cont_mod_form div{
-    margin:20px 10px;
-}
-
-/*ELIMINAR USUARIO*/
-.container_mod {
-    height: 85vh;
-    background-color: #b6b5b5;
-    border: 3px solid #444;
-    padding: 50px 40px;
-    position: relative;
+@media (max-width:799px){
+    
 }
 
 
 
-@media(max-width:1280px) {}
 
-@media(min-width:800px) and (max-width: 1199px) {}
-
-@media (max-width:799px) {}

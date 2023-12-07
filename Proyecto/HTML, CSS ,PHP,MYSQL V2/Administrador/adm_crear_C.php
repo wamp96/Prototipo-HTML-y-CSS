@@ -65,9 +65,6 @@
     }
     /*Se cierra la conexion a la base de datos $conexion abierta previamente */
     mysqli_close($con);
-    //Imprimir mensaje al cerrar la conexion a la base de datos
-    echo"El usuario fue ingresado correctamente";
-        
 ?>
 
 

@@ -48,11 +48,101 @@
             mysqli_query($con, $sql); 
             
 
-        if (mysqli_error($con)) {
+        if (mysqli_error($con)) {   
             die("Error en la consulta: " . mysqli_error($con));
         }
         /*Se cierra la conexion a la base de datos $conexion abierta previamente */
         mysqli_close($con);
-        //Imprimir mensaje al cerrar la conexion a la base de datos
-        echo"El usuario fue ingresado correctamente";
     }
+
+    
+    function editarUsuario($id, $identidad, $nombre, $apellidop, $apellidom, $correo, $telefono, $usuario, $rol, $area, $ciudad, $contrasena) {
+        $con = connection();
+
+        $sql_usuario = "UPDATE usuario 
+                        SET nombre_perfil = '$usuario', 
+                            contraseña = '$contrasena', 
+                            id_rol = '$rol' 
+                        WHERE id_usuario = $id";
+
+        mysqli_query($con, $sql_usuario);
+
+        if (mysqli_error($con)) {            
+            die("Error en la consulta de usuario: " . mysqli_error($con));
+        }
+
+        switch ($rol) {
+            case 1:
+                $sql = "UPDATE tecnico 
+                        SET identidad = '$identidad', 
+                            nombre = '$nombre', 
+                            apellidop = '$apellidop', 
+                            apellidom = '$apellidom', 
+                            correo = '$correo', 
+                            telefono = '$telefono', 
+                            id_ciudad = '$ciudad', 
+                            id_area = '$area' 
+                        WHERE id_usuario = $id";
+                break;
+            case 2:
+                $sql = "UPDATE analista_inventario 
+                        SET identidad = '$identidad', 
+                            nombre = '$nombre', 
+                            apellidop = '$apellidop', 
+                            apellidom = '$apellidom', 
+                            correo = '$correo', 
+                            telefono = '$telefono', 
+                            id_ciudad = '$ciudad', 
+                            id_area = '$area' 
+                        WHERE id_usuario = $id";
+                break;
+            case 3:
+                $sql = "UPDATE usuario_final 
+                        SET identidad = '$identidad', 
+                            nombre = '$nombre', 
+                            apellidop = '$apellidop', 
+                            apellidom = '$apellidom', 
+                            correo = '$correo', 
+                            telefono = '$telefono', 
+                            id_ciudad = '$ciudad', 
+                            id_area = '$area' 
+                        WHERE id_usuario = $id";
+                break;
+            case 4:
+                $sql = "UPDATE administrador 
+                        SET identidad = '$identidad', 
+                            nombre = '$nombre', 
+                            apellidop = '$apellidop', 
+                            apellidom = '$apellidom', 
+                            correo = '$correo', 
+                            telefono = '$telefono', 
+                            id_ciudad = '$ciudad', 
+                            id_area = '$area' 
+                        WHERE id_usuario = $id";
+                break;
+        }
+
+        mysqli_query($con, $sql);
+
+        if (mysqli_error($con)) {   
+            die("Error en la consulta: " . mysqli_error($con));
+        }
+
+        mysqli_close($con);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,5 @@
-<?php include ("./template/cabecera.php"); ?>
+<?php include ("./template/cabecera.php");
+      include("./template/aside.php"); ?>
 <?php        
       include ("../function.php");
 

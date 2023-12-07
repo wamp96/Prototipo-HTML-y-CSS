@@ -12,15 +12,30 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    GESTIONAR USUARIO
+                    GESTIONAR ELEMENTOS 
                 </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <ul class="accordion-body">
-                        <li><a href="adm_listar_I.php" class="link-body-emphasis d-inline-flex text-decoration-none rounded">LISTA USUARIOS</a></li>    
-                        <li><a href="adm_crear_I.php" class="link-body-emphasis d-inline-flex text-decoration-none rounded">CREAR USUARIO</a></li>
-                        <li><a href="adm_elim_I.php" class="link-body-emphasis d-inline-flex text-decoration-none rounded">ELIMINAR USUARIO</a></li>
-                        <li><a href="adm_modif_I.php" class="link-body-emphasis d-inline-flex text-decoration-none rounded">EDITAR USUARIO</a></li>    
+                        <li><a href="listar_elementos.php" class="link-body-emphasis d-inline-flex text-decoration-none rounded">LISTAR ELEMENTOS</a></li>    
+                        <li><a href="registro_elementos.php" class="link-body-emphasis d-inline-flex text-decoration-none rounded">REGISTRAR ELEMENTO</a></li>
+                        <li><a href="moficar_elementos.php" class="link-body-emphasis d-inline-flex text-decoration-none rounded">MODIFICAR USUARIO</a></li>    
+                </ul>
+                </div>
+            </div>
+            </li>
+            <hr>
+            <li class="mb-1">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    GESTIONAR INVENTARIO 
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <ul class="accordion-body">
+                        <li><a href="asignar_elementos.php" class="link-body-emphasis d-inline-flex text-decoration-none rounded">ASIGNAR ELEMENTOS</a></li>    
+                        <li><a href="visualizar_sol_a.php" class="link-body-emphasis d-inline-flex text-decoration-none rounded">SOLICITAR ELEMENTOS</a></li>
                 </ul>
                 </div>
             </div>
