@@ -1,0 +1,79 @@
+
+{   
+    "usuario":{
+    "_id": "ID_DEL_USUARIO",
+    "nombre": "NOMBRE_DEL_USUARIO",
+    "ciudad": "CIUDAD_DEL_USUARIO",
+    "area": "AREA_DEL_USUARIO",
+    "correo": "CORREO_DEL_USUARIO",
+    "telefono": "TELEFONO_DEL_USUARIO",
+    "perfil": {
+      "nombre": "NOMBRE_DE_PERFIL",
+      "contraseña": "CONTRASEÑA_DEL_PERFIL",
+      "rol": "ROL_DEL_PERFIL",
+      "estado": "ESTADO_DEL_PERFIL"
+       }
+    },
+    "proveedor": {
+      "_id": "ID_DEL_PROVEEDOR",
+      "nombre": "NOMBRE_PROVEEDOR",
+      "telefono": "TELEFONO",
+      "descripcion": "DESCRIPCION_PROVEEDOR"
+    },
+
+    "elemento": {
+      "_id": "ID_ELEMENTO",
+      "nombre": "NOMBRE_ELEMENTO",
+      "categoria": "CATEGORIA",
+      "imagen": "IMAGEN",
+      "serial": "SERIAL",
+      "marca": "MARCA",
+      "modelo": "MODELO",
+      "procesador": "PROCESADOR",
+      "tamano_memoria_ram": "TAMAÑO_MEMORIARAM",
+      "tamano_disco_duro": "TAMAÑO_DISCODURO",
+      "valor_unitario": "VALOR_UNITARIO",
+      "_id_usuario": "ID_DEL_USUARIO",
+      "stock": "STOCK",
+      "fecha_ingreso": "FECHA_INGRESO", 
+      "observacion": "OBSERVACION",
+      "estado": {
+        "_id_Estado": 1,
+        "nombre": "ESTADO_ELEMENTO"
+      }
+    },
+
+
+    "solicitud":{
+        "_id_Solicitud": "ID_SOLICITUD",
+        "Fecha_Solicitud":"FECHA_SOLICITUDE_ELEMENTO",
+        "Cantidad_Solicitud":"CANTIDAD_SOLICITUD",
+        "_id_Elemento": "ID_ELEMENTO",
+        "_id_Tecnico": "ID_TECNICO"
+    },
+
+
+    "requerimiento":{
+        "_id_requerimiento":"ID_REQUERIMIENTO",
+        "_id_usuario":"ID_USUARIO",
+        "fecha_requerimiento":"FECHA_REQUERIMIENTO",
+        "descripcion":"DESCRIPCION_REQUERIMIENTO"
+    },
+
+
+    "pedido":{
+        "_id_pedido":"ID_PEDIDO",
+        "fecha_pedido":"FECHA_PEDIDO",
+        "_id_Elemento": "ID_ELEMENTO",
+        "Cantidad_Pedido":"CANTIDAD_PEDIDO",
+        "Detalle_Pedido":"DETALLE_PEDIDO",
+        "Costo_Total":"COSTOS_TOTAL"
+    }
+
+
+  }
+
+
+
+
+
