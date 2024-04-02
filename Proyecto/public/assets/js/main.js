@@ -2,7 +2,8 @@ const crypto = require("crypto")
 
 
 class Usuario {
-    constructor() {
+    constructor(idcont) {
+        this.idcont
 
     }
 
