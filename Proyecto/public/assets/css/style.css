@@ -1,10 +1,12 @@
 /*ESTILO PARA TODOS LOS ARCHIVOS*/
-*, ::after, ::before {
+*,
+::after,
+::before {
     box-sizing: border-box;
 }
 
 /* CSS ASIDE*/
-.aside{
+.aside {
     width: 100%;
     height: 100%;
     margin-top: 60px;
@@ -44,6 +46,7 @@ body {
     border: 3px solid #444;
     box-sizing: border-box;
 }
+
 #cabecera img {
     height: 85px;
 }
@@ -56,16 +59,18 @@ main {
     max-height: 100vh;
     box-sizing: border-box;
 }
-    /*ESTILO SECTION*/
-    section {
-        background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
-        width: 100%;
-        height: 100%;
-    }
-    /*logos de la parte izquierda*/
-    .logos {
-        display: flex;
-    }
+
+/*ESTILO SECTION*/
+section {
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    width: 100%;
+    height: 100%;
+}
+
+/*logos de la parte izquierda*/
+.logos {
+    display: flex;
+}
 
 .logo1 img {
     border-right: 3px solid #444;
@@ -81,6 +86,7 @@ main {
     margin: var(--img-margen-tl)
 }
 
+/*CONTAINER ASIDE*/
 aside {
     margin-top: 5%;
     background-image: linear-gradient(to bottom, #d7d2cc 0%, #304352 100%);
@@ -202,10 +208,30 @@ aside {
     width: 30px;
 }
 
-.titulo_contenido{
+.titulo_contenido {
     height: 8%;
     background-color: #000000;
     color: #fff;
     text-align: start;
     padding: 20px;
+}
+
+.aside li {
+    background-color: #000000;
+}
+
+
+
+/*MEDIA  QUERY*/
+
+@media only screen and (min-width: 1300px) {
+
+    #aside {
+        margin-top: 20px;
+    }
+
+
+    aside button {
+        font-size: 10px;
+    }
 }

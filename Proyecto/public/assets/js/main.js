@@ -1,38 +1,56 @@
-const crypto = require("crypto")
+const URI = "https://wm-inventory-default-rtdb.firebaseio.com/api/usuario";
 
+window.addEventListener('DOMContentLoaded', function () {
+    return fetch(URI + ".json")
+        .then((res) => {
+            if (!res.ok) {
+                console.log('Result: Problem');
+                return;
+            }
+            return res.json();
+        })
+        .then((data) => {
+            //this.setTableUser(data);
+            console.log(data[1].ciudad);
+        })
+        .catch((error) => {
+            console.error(error);
+        })
+        .finally();
+});
 
 class Usuario {
     constructor(idcont) {
-        this.idcont
-
+        this.URL = "https://wm-inventory-default-rtdb.firebaseio.com/api/";
+        this.UrlUser = this.URL + "user/";
+        this.getDataUsers();
     }
+
+
+    async getDataUsers() {
+        return fetch(this.UrlUser + ".json")
+            .then((res) => {
+                if (!res.ok) {
+                    console.log('Result: Problem');
+                    return;
+                }
+                return res.json();
+            })
+            .then((data) => {
+                this.setTableUser(data);
+            })
+            .catch((error) => {
+                console.error(error);
+            })
+            .finally();
+    }
+
+
+
+
+
 
 }
 
-class Administrador extends Usuario {
-    constructor() {
-        super();
-    }
 
-}
 
-class AnalistaInventario extends Usuario {
-    constructor() {
-        super();
-    }
-
-}
-
-class Tecnico extends Usuario {
-    constructor() {
-        super();
-    }
-
-}
-
-class UsuarioFinal extends Usuario {
-    constructor() {
-        super();
-    }
-
-}
