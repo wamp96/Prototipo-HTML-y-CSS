@@ -1,0 +1,155 @@
+
+/**
+ * Author:WILLIAN ANDRES MORENO PRIETO
+ * Date:26/03/2024
+ * Description:Clases de proyecto
+ * 
+*/
+
+class User {
+  /*Metodo constructor*/
+  constructor(idcont) {
+    this.URL = "https://wm-inventory-default-rtdb.firebaseio.com/api/usuario"
+
+  }
+
+  /*Método para obtener datos de los usuarios*/
+  async getDataUsers() {
+    return fetch(this.URL + ".json")
+      .then((res) => {
+        if (!res.ok) {
+          console.log('Result: Problem');
+          return;
+        }
+        return res.json();
+      })
+      .then((data) => {
+        this.setTableUser(data);
+      })
+      .catch((error) => {
+        console.error(error);
+      })
+      .finally();
+  }
+
+  /*Método asíncrono para obtener datos del usuario por identificación.*/
+  async getDataUser(id) {
+    return fetch(this.URL + "/" + id + ".json")
+      .then((res) => {
+        if (!res.ok) {
+          console.log('Result: Problem');
+          return;
+        }
+        return res.json();
+      })
+      .then((data) => {
+        return data;
+      })
+      .catch((error) => {
+        console.error(error);
+      })
+      .finally();
+  }
+
+  /*Método para crear las filas de la tabla usando el formato Json del usuario.*/
+  setTableUser(data) {
+    let contRow = 1;
+    let rowTable = "";
+    let btnActions = "";
+
+    console.log(data);
+    for (const user in data) {
+      let getId = "'" + user + "'";
+      btnActions = '<div class="btn-group " role="group" aria-label="Basic mixed styles example">' +
+        '<button type="button" onclick="showUser(' + getId + ')" class="btn btn-info"><img class="img img-fluid" src="./assets/img/icons/eye-fill.svg"></button>' +
+        '<button type="button" onclick="editUser(' + getId + ')" class="btn btn-warning"><img class="img img-fluid" src="./assets/img/icons/pencil-square.svg"></button>' +
+        '<button type="button" onclick="deleteUser(' + getId + ')" class="btn btn-danger"><img class="img img-fluid" src="./assets/img/icons/trash3-fill.svg"></button>' +
+        '</div>';
+      rowTable += "<tr>" +
+        "<td>" + contRow + "</td>" +
+        "<td>" + data[user]._id + "</td>" +
+        "<td>" + data[user].area + "</td>" +
+        "<td>" + data[user].ciudad + "</td>" +
+        "<td>" + data[user].correo + "</td>" +
+        "<td>" + data[user].nombre + "</td>" +
+        "<td class='text-center'>" + data[user].valor + "</td>" +
+        "<td class='text-center'>" + btnActions + "</td>" +
+        "<tr>";
+      contRow++;
+    }
+    this.objTbody.innerHTML = rowTable;
+  }
+
+  /*Método para crear el nuevo usuario de datos en formato Json de usuario.*/
+  async setCreateUser(data) {
+    return fetch(this.URL + ".json", {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+      .then((res) => {
+        if (!res.ok) {
+          console.log('Result: Problem');
+          return;
+        }
+        return res.json();
+      })
+      .then((data) => {
+        this.getDataUsers();
+      })
+      .catch((error) => {
+        console.error(error);
+      })
+      .finally();
+  }
+
+  /*método para actualizar el usuario enviando un conjunto de datos en formato Json por parte del usuario.*/
+  async setUpdateUser(id, data) {
+    return fetch(this.URL + "/" + id + ".json", {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+      .then((res) => {
+        if (!res.ok) {
+          console.log('Result: Problem');
+          return;
+        }
+        return res.json();
+      })
+      .then((data) => {
+        this.getDataUsers();
+      })
+      .catch((error) => {
+        console.error(error);
+      })
+      .finally();
+  }
+
+  /*Método para eliminar el usuario. */
+  async setDeleteUser(id) {
+    return fetch(this.URL + "/" + id + ".json", {
+      method: 'DELETE'
+    })
+      .then((res) => {
+        if (!res.ok) {
+          console.log('Result: Problem');
+          return;
+        }
+        return res.json();
+      })
+      .then((data) => {
+        return data;
+      })
+      .catch((error) => {
+        console.error(error);
+      })
+      .finally();
+  }
+}
+
+

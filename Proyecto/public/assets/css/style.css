@@ -3,6 +3,7 @@
 ::after,
 ::before {
     box-sizing: border-box;
+    margin: 0px;
 }
 
 /* CSS ASIDE*/
@@ -216,22 +217,23 @@ aside {
     padding: 20px;
 }
 
-.aside li {
-    background-color: #000000;
-}
-
 
 
 /*MEDIA  QUERY*/
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (max-width: 1440px) {
 
-    #aside {
-        margin-top: 20px;
+    aside {
+        margin-top: 105px;
     }
 
-
-    aside button {
-        font-size: 10px;
+    aside .title,
+    .nav-link {
+        font-size: 1.2rem !important;
     }
+
+    aside .nav-link {
+        font-size: 0.9rem !important;
+    }
+
 }
