@@ -1,7 +1,8 @@
 /**DEFINE*/
 const idcont = "container";
-const containerBase = new User(idcont);
-const formUser = document.getElementById('formUser');
+const formUser = "gestionUsuario";
+const containerBase = new User(idcont,formUser);
+const idgestionUser = document.getElementById('gestionUsuario');
 const btnSubmit = document.getElementById('btnSubmit');
 const preload = document.getElementById('preload');
 //const myModal = new bootstrap.Modal(document.getElementById("modalApp"), {});
@@ -140,6 +141,6 @@ function hidePreload() {
 }*/
 
 /*Vista de carga de usuarios primer evento que se ejecuta al cargar la pagina**/
-window.addEventListener('load', (e) => {
+/*window.addEventListener('load', (e) => {
     getDataUser();
-});
+});*/
