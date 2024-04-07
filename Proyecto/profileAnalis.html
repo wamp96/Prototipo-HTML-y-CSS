@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--CSS STYLE-->
+    <link rel="stylesheet" href="./public/assets/css/style.css">
+
+    <!--CSS NORMALIZE-->
+    <!--<link rel="stylesheet" href="./public/assets/css/normalize.css">-->
+
+    <!--TITLE PROYECT-->
+    <title>WM INVENTORY COMPANY OR BUSINESS</title>
+</head>
+
+
+<body>
+
+    <!--CONTAINER NAV-->
+    <nav id="cabecera" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <div class="logos">
+                <div class="logo1">
+                    <img src="https://img.freepik.com/vector-premium/icono-empresa-ilustracion-elemento-simple-diseno-simbolo-concepto-empresa-puede-utilizar-web-movil_159242-7784.jpg?w=2000"
+                        alt="\logo_emp">
+                </div>
+                <div class="logo2">
+                    <img src="./public/assets/img/logo.png" alt="logo_soft">
+                </div>
+            </div>
+            <div class="perfil">
+                <div class="imagen_perfil">
+                    <img src="./public/assets/img/perfil.jpg" alt="Perfil">
+                </div>
+                <div class="perfil_txt">
+                    <ul>
+                        <li>
+                            <h6>PERFIL: ADMINISTRADOR</h6>
+                        </li>
+                        <li><button>PERFIL</button></li>
+                        <li> <button role="link" onclick="desconexion()">Desconexion</button></li>
+                        <script>
+                            function desconexion() {
+                                window.location.href = './index.html';
+                            }
+                        </script>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--END CONTAINER NAV-->
+
+    <!--CONTAINER MAIN-->
+    <main class="d-flex flex-nowrap">
+
+        <!--CONTAINER ASIDE-->
+        <aside class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary">
+
+            <a class="d-flex align-items-center justify-content-center mb-md-0 link-body-emphasis text-decoration-none">
+                <h6 class="title fs-4">PANEL INICIAL</h6>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+
+                <li class="nav-item">
+                    <a href="#" id="gestionUsuario" class="nav-link link-body-emphasis" onclick="getDataUser()"> 
+                        <svg class="bi pe-none me-2" width="16" height="16">
+                            <use xlink:href="#people-circle"></use>
+                        </svg>
+                        GESTION DE USUARIOS
+                    </a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                    <a href="#" class="nav-link link-body-emphasis">
+                        <svg class="bi pe-none me-2" width="16" height="16">
+                            <use xlink:href="#people-circle"></use>
+                        </svg>
+                        DATOS DE USUARIO
+                    </a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                    <a href="#" class="nav-link link-body-emphasis">
+                        <svg class="bi pe-none me-2" width="16" height="16">
+                            <use xlink:href="#people-circle"></use>
+                        </svg>
+                        NOSOTROS
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link link-body-emphasis">
+                        <svg class="bi pe-none me-2" width="16" height="16">
+                            <use xlink:href="#people-circle"></use>
+                        </svg>
+                        AYUDA
+                    </a>
+                </li>
+                <hr>
+            </ul>
+        </aside>
+        <!--END CONTAINER ASIDE-->
+
+
+        <!--CONTAINER SECTION-->
+        <section id="container" class="container-fluid">
+           
+        </section>
+        <!--END CONTAINER SECTION-->
+
+        <!--CONTAINER FOOTER-->
+        <footer class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark d-flex justify-content-around">
+            <div class="cont_pie_pagina">
+                <h6>CONTACTANOS EN: CORREO: informacionWM@wmcob.com</h6>
+                <h6>TEL: 3193065411 - DIRECCION: Carrera 123 #12-123</h6>
+                <h6></h6>
+            </div>
+            <div class="cont_pie_pagina2">
+                <h6>2023 WM INVENTORY COMPANY OR BUSINESS</h6>
+                <h6>Todos los derechos reservados</h6>
+            </div>
+            <div class="cont_pie_pagina3">
+                <H6>SIGUENOS EN:</H6>
+                <img src="./public/assets/img/bxl-youtube.jpg" alt="">
+                <img src="./public/assets/img/bxl-facebook-square.jpg" alt="">
+                <img src="./public/assets/img/bxl-twitter.jpg" alt="">
+                <img src="./public/assets/img/bxl-linkedin-square.jpg" alt="">
+            </div>
+        </footer>
+        <!-- END CONTAINER FOOTER-->
+
+    </main>
+    <!--END CONTAINER MAIN-->
+
+    <!--Script Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!--Script JS-->
+    <script src="./public/assets/js/class.js"></script>
+    <script src="./public/assets/js/main.js"></script>
+    <!--<script src="./public/assets/js/interfaz.js"></script>-->
+
+    <!--Script sweetalert-->
+    <!--<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>-->
+
+</body>
+
+</html>

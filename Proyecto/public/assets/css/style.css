@@ -4,6 +4,7 @@
 ::before {
     box-sizing: border-box;
     margin: 0px;
+    padding: 0px;
 }
 
 /* CSS ASIDE*/
@@ -15,17 +16,10 @@
 
 
 /*PANTILLA INICIAL*/
-
 :root {
     --img-margen-tl: 5px 10px 5px 10px;
     --color-fondo: #667cac;
 
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
 }
 
 body {
@@ -89,13 +83,12 @@ section {
 
 /*CONTAINER ASIDE*/
 aside {
-    margin-top: 5%;
+    margin-top: 109px;
     background-image: linear-gradient(to bottom, #d7d2cc 0%, #304352 100%);
-    border-right: 3px solid #444;
+    border-right: 10px solid #444;
 }
 
 .container-fluid {
-    /*background-image: linear-gradient(to top, #09203f 0%, #537895 100%);*/
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     text-align: center;
     box-sizing: border-box;
