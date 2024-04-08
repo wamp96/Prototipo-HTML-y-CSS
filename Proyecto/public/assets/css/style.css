@@ -85,7 +85,7 @@ section {
 aside {
     margin-top: 109px;
     background-image: linear-gradient(to bottom, #d7d2cc 0%, #304352 100%);
-    border-right: 10px solid #444;
+    border-right: 5px solid #444;
 }
 
 .container-fluid {
@@ -210,7 +210,13 @@ aside {
     padding: 20px;
 }
 
-
+.btn-add{
+    position: fixed;
+    height: 40px;
+    width: 60px;
+    top:  120px;
+    left: 15%;
+}
 
 
 

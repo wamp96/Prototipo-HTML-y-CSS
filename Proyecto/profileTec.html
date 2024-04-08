@@ -41,7 +41,7 @@
                 <div class="perfil_txt">
                     <ul>
                         <li>
-                            <h6>PERFIL: ADMINISTRADOR</h6>
+                            <h6>PERFIL: TECNICO</h6>
                         </li>
                         <li><button>PERFIL</button></li>
                         <li> <button role="link" onclick="desconexion()">Desconexion</button></li>
@@ -70,11 +70,21 @@
             <ul class="nav nav-pills flex-column mb-auto">
 
                 <li class="nav-item">
+                    <a href="#" id="requerimientos" class="nav-link link-body-emphasis" onclick="getDataUser()"> 
+                        <svg class="bi pe-none me-2" width="16" height="16">
+                            <use xlink:href="#people-circle"></use>
+                        </svg>
+                        REQUERIMIENTO
+                    </a>
+                </li>
+                <hr>
+
+                <li class="nav-item">
                     <a href="#" id="gestionUsuario" class="nav-link link-body-emphasis" onclick="getDataUser()"> 
                         <svg class="bi pe-none me-2" width="16" height="16">
                             <use xlink:href="#people-circle"></use>
                         </svg>
-                        GESTION DE USUARIOS
+                        SOLICITAR/DEVOLVER ELEMENTOS
                     </a>
                 </li>
                 <hr>
