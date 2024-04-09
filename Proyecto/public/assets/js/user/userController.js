@@ -41,10 +41,11 @@ if(objForm)
 objForm.addEventListener("submit", async (e) => {
   e.preventDefault();
   let jsonUser = FunApp.sendData(objForm.id);
-  if (typeof jsonUser.password !== 'undefined' && typeof jsonUser.user !== 'undefined') {
+  console.log("password"+jsonUser.password);
+  if (typeof jsonUser.password !== 'undefined' && typeof jsonUser.correo !== 'undefined') {
     try {
       let pass = jsonUser.password;
-      let user = (jsonUser.user).toLowerCase();
+      let user = (jsonUser.correo).toLowerCase();
       const userCredentials = await createUserWithEmailAndPassword(auth, user, pass).then((data) => {
         //console.log(data);
         alert("User Create");

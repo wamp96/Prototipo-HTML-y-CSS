@@ -39,17 +39,21 @@ export function viewText(id) {
  */
 export function sendData(idForm) {
   let objForm = document.getElementById(idForm);
+ 
   return getDataForm(objForm);
 }
 
+
+
 /**
- * The function `getDataForm` is designed to extract form data, validate passwords, and return a JSON
- * object containing the form field IDs and values.
- * @param objForm - The `objForm` parameter in the `getDataForm` function is expected to be a reference
- * to a form element in the HTML document. This function is designed to extract data from the form
- * inputs and return it as a JSON object.
- * @returns The function `getDataForm` is returning a JSON object containing the data entered in the
- * form fields.
+
+ * La función `getDataForm` está diseñada para extraer datos de formularios, validar contraseñas y devolver un JSON
+ * objeto que contiene los ID y valores de los campos del formulario.
+ * @param objForm - Se espera que el parámetro `objForm` en la función `getDataForm` sea una referencia
+ * a un elemento de formulario en el documento HTML. Esta función está diseñada para extraer datos del formulario.
+ * ingresa y lo devuelve como un objeto JSON.
+ * @returns La función `getDataForm` devuelve un objeto JSON que contiene los datos ingresados ​​en el
+ *campos del formulario.
  */
 export function getDataForm(objForm) {
   try {
