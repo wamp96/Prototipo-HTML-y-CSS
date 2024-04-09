@@ -61,7 +61,7 @@ class User {
     let rowTable = "";
     let btnActions = "";
 
-    let tableR = '<div style=" margin-top: 120px;" id="tableUser" class="table-responsive tableApp"><div class="d-flex btn-add"><button type="button" onclick="createUser()" class="btn btn-success"><img class="img img-fluid"src="./assets/img/icons/plus-square-fill.svg">NUEVO</button></div><br><br><table class="table table-dark table-striped table-hover"><thead><tr class="text-center"><th>#</th><th>NOMBRE</th><th>N° DOCUMENTO</th><th>AREA</th><th>CIUDAD</th><th>CORREO</th><th>NOMBRE_PERFIL</th><th>ESTADO</th><th>ROL</th><th>TELEFONO</th><th>ACTIONS</th></tr></thead><tbody id="tbody">'
+    let tableR = '<div style=" margin-top: 120px;" id="tableUser" class="table-responsive tableApp"><div class="d-flex btn-add"><button type="button" onclick="createUser()" class="btn btn-success" style"width: 100px;"><img class="img img-fluid" src="./public/assets/img/icons/plus-square-fill.svg"></button><h6>NUEVO USUARIO</h6></div><br><br><table class="table table-dark table-striped table-hover"><thead><tr class="text-center"><th>#</th><th>NOMBRE</th><th>N° DOCUMENTO</th><th>AREA</th><th>CIUDAD</th><th>CORREO</th><th>NOMBRE_PERFIL</th><th>ESTADO</th><th>ROL</th><th>TELEFONO</th><th>ACTIONS</th></tr></thead><tbody id="tbody">'
     let tableA = ' </tbody><tfoot><tr class="text-center"><th>#</th><th>NOMBRE</th><th>N° DOCUMENTO</th><th>AREA</th><th>CIUDAD</th><th>CORREO</th><th>NOMBRE_PERFIL</th><th>ESTADO</th><th>ROL</th><th>TELEFONO</th><th>ACTIONS</th></tr></tfoot></table></div>'
     for (const user  in data) {
       
@@ -218,7 +218,7 @@ class elements {
     let contRow = 1;
     let rowTable = "";
     let btnActions = "";
-    let tableR = '<div style=" margin-top: 120px;" id="createElement" class="table-responsive tableApp"><div class="d-flex btn-add"><button type="button" onclick="createElement class="btn btn-success"><img class="img img-fluid"src="./assets/img/icons/plus-square-fill.svg">NUEVO</button></div><br><br><table class="table table-dark table-striped table-hover"><thead><tr class="text-center"><th>#</th><th>NOMBRE</th><th>CATEGORIA</th><th>ESTADO</th><th>FECHA INGRESO</th><th>SERIAL</th><th>MARCA</th><th>MODELO</th><th>IMAGEN</th><th>TAMAÑA DISCO</th><th>TAMAÑO MEMORIA</th><th>VALOR U</th><th>ACTIONS</th></tr></thead><tbody id="tbody">'
+    let tableR = '<div style=" margin-top: 120px;" id="createElement" class="table-responsive tableApp"><div class="d-flex btn-add"><button type="button" onclick="createE()" class="btn btn-success"><img class="img img-fluid"src="./public/assets/img/icons/plus-square-fill.svg"></button><h6>NUEVO ELEMENTO</h6></div><br><br><table class="table table-dark table-striped table-hover"><thead><tr class="text-center"><th>#</th><th>NOMBRE</th><th>CATEGORIA</th><th>ESTADO</th><th>FECHA INGRESO</th><th>SERIAL</th><th>MARCA</th><th>MODELO</th><th>IMAGEN</th><th>TAMAÑA DISCO</th><th>TAMAÑO MEMORIA</th><th>VALOR U</th><th>ACTIONS</th></tr></thead><tbody id="tbody">'
     let tableA = ' </tbody><tfoot><tr class="text-center"><th>#</th><th>NOMBRE</th><th>CATEGORIA</th><th>ESTADO</th><th>FECHA INGRESO</th><th>SERIAL</th><th>MARCA</th><th>MODELO</th><th>IMAGEN</th><th>TAMAÑA DISCO</th><th>TAMAÑO MEMORIA</th><th>VALOR U</th><th>ACTIONS</th></tr></tfoot></table></div>'
     for (const element  in data) {
       let getId = "'" + element + "'";
